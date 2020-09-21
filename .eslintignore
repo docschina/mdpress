@@ -1,0 +1,6 @@
+**/node_modules
+!.eslintrc.js
+!.commitlintrc.js
+!.mdpress
+packages/@mdpress/shared-utils/lib
+packages/@mdpress/shared-utils/types

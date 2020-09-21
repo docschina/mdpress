@@ -1,0 +1,73 @@
+{
+  "private": true,
+  "description": "Minimalistic doc generator with Markdown and React component based layout system",
+  "workspaces": [
+    "packages/@mdpress/*",
+    "packages/mdpress",
+    "packages/docs"
+  ],
+  "scripts": {
+    "boot": "lerna bootstrap --registry http://r.cnpmjs.org/ && node scripts/bootstrap.js",
+    "build": "yarn tsc && yarn build:docs",
+    "build:docs": "yarn workspace docs build",
+    "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s -r 2",
+    "clean": "lerna clean && rm -rf node_modules",
+    "dev": "yarn tsc && yarn dev:docs",
+    "dev:docs": "yarn workspace docs dev",
+    "lint": "eslint packages --ext .js,.ts --fix",
+    "packages:changed": "lerna changed",
+    "packages:diff": "lerna diff",
+    "packages:list": "lerna ls -l",
+    "register-mdpress": "lerna exec --scope mdpress -- yarn link",
+    "release": "yarn lint && yarn build && yarn test && node scripts/release.js",
+    "remote-version": "node scripts/remote-version.js",
+    "show-help": "yarn workspace docs show-help",
+    "test": "node scripts/test.js",
+    "tsc": "yarn workspace @mdpress/shared-utils tsc",
+    "unregister-mdpress": "lerna exec --scope mdpress -- yarn unlink",
+    "update-core-team": "all-contributors generate",
+    "view-info": "yarn tsc && yarn workspace docs view-info"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged",
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
+  },
+  "lint-staged": {
+    "*.{js,ts}": [
+      "eslint --fix",
+      "git add"
+    ],
+    "package.json": [
+      "sort-package-json",
+      "git add"
+    ]
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^8.2.0",
+    "@commitlint/config-conventional": "^8.2.0",
+    "@types/escape-html": "^0.0.20",
+    "@types/fs-extra": "^5.0.4",
+    "@types/globby": "^9.1.0",
+    "@types/hash-sum": "^1.0.0",
+    "@types/lru-cache": "^5.1.0",
+    "@types/node": "^12.7.5",
+    "@types/semver": "^6.0.0",
+    "@typescript-eslint/eslint-plugin": "^2.9.0",
+    "@typescript-eslint/parser": "^2.9.0",
+    "all-contributors-cli": "^6.9.1",
+    "babel-eslint": "^10.0.1",
+    "conventional-changelog-cli": "^2.0.23",
+    "eslint": "^6.8.0",
+    "eslint-plugin-jest": "^23.0.5",
+    "eslint-plugin-react": "^7.19.0",
+    "husky": "^3.0.5",
+    "inquirer": "^7.0.0",
+    "lerna": "^3.20.2",
+    "lint-staged": "^9.3.0",
+    "minimist": "^1.2.0",
+    "sort-package-json": "^1.24.0",
+    "typescript": "^3.6.3"
+  }
+}
