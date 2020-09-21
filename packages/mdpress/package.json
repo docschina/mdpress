@@ -1,0 +1,55 @@
+{
+  "name": "mdpress",
+  "version": "1.0.0-rc.10",
+  "description": "Minimalistic doc generator with React component based layout system",
+  "keywords": [
+    "documentation",
+    "generator",
+    "markdown",
+    "react"
+  ],
+  "homepage": "https://github.com/LinFeng1997/mdpress#readme",
+  "bugs": {
+    "url": "https://github.com/LinFeng1997/mdpress/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LinFeng1997/mdpress.git",
+    "directory": "packages/mdpress"
+  },
+  "license": "MIT",
+  "author": "LinFeng1997",
+  "main": "index.js",
+  "bin": {
+    "mdpress": "cli.js"
+  },
+  "scripts": {
+    "postinstall": "opencollective-postinstall || exit 0"
+  },
+  "browserslist": [
+    ">1%"
+  ],
+  "dependencies": {
+    "@mdpress/core": "1.0.0-rc.10",
+    "@mdpress/shared-utils": "1.0.0-rc.10",
+    "@mdpress/theme-default": "1.0.0-rc.10",
+    "cac": "^6.5.6",
+    "envinfo": "^7.2.0",
+    "opencollective-postinstall": "^2.0.2",
+    "update-notifier": "^4.0.0"
+  },
+  "engines": {
+    "node": ">=8.6"
+  },
+  "collective": {
+    "type": "opencollective",
+    "url": "https://opencollective.com/mdpress"
+  },
+  "gitHead": "1e0eb4de07f505034d05cfcf6c039122d6d138ed",
+  "maintainers": [
+    {
+      "name": "LinFeng1997",
+      "email": "ynublow@gmail.com"
+    }
+  ]
+}

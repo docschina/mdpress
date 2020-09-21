@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`highlightLines highlight multiple lines 1`] = `
+"<div class=\\"highlight-lines\\"><div class=\\"highlighted\\">&nbsp;</div><div class=\\"highlighted\\">&nbsp;</div><br><div class=\\"highlighted\\">&nbsp;</div><div class=\\"highlighted\\">&nbsp;</div><br></div>const array = new Array();
+
+array.push(2);
+array.pop();
+array.unshift(3);
+"
+`;
+
+exports[`highlightLines highlight single line 1`] = `
+"<div class=\\"highlight-lines\\"><div class=\\"highlighted\\">&nbsp;</div><br></div>const array = new Array();
+"
+`;

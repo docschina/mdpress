@@ -1,0 +1,29 @@
+{
+  "name": "@mdpress/plugin-medium-zoom",
+  "version": "1.0.0-rc.10",
+  "description": "medium-zoom plugin for mdpress",
+  "keywords": [
+    "documentation",
+    "markdown",
+    "mdpress",
+    "generator"
+  ],
+  "homepage": "https://github.com/LinFeng1997/mdpress/packages/@mdpress/plugin-medium-zoom#readme",
+  "bugs": {
+    "url": "https://github.com/LinFeng1997/mdpress/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LinFeng1997/mdpress.git"
+  },
+  "license": "MIT",
+  "author": "LinFeng1997",
+  "main": "index.js",
+  "dependencies": {
+    "medium-zoom": "^1.0.4"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "gitHead": "1e0eb4de07f505034d05cfcf6c039122d6d138ed"
+}

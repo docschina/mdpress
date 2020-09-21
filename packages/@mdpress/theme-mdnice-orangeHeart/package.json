@@ -1,0 +1,28 @@
+{
+  "name": "@mdpress/theme-mdnice-orangeHeart",
+  "version": "1.0.0-rc.10",
+  "description": "theme-mdnice-orangeHeart for mdpress",
+  "keywords": [
+    "documentation",
+    "markdown",
+    "mdpress",
+    "generator"
+  ],
+  "homepage": "https://github.com/LinFeng1997/mdpress/packages/@mdpress/theme-mdnice-orangeHeart#readme",
+  "bugs": {
+    "url": "https://github.com/LinFeng1997/mdpress/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LinFeng1997/mdpress.git"
+  },
+  "license": "MIT",
+  "author": "LinFeng1997",
+  "main": "index.js",
+  "publishConfig": {
+    "access": "public"
+  },
+  "dependencies": {
+    "@mdpress/theme-default": "1.0.0-rc.10"
+  }
+}

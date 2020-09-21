@@ -1,0 +1,30 @@
+{
+  "name": "@mdpress/markdown-browser",
+  "version": "1.0.0-rc.10",
+  "description": "markdown-browser for mdpress",
+  "keywords": [
+    "documentation",
+    "markdown",
+    "mdpress",
+    "generator"
+  ],
+  "homepage": "https://github.com/LinFeng1997/mdpress/packages/@mdpress/markdown-browser#readme",
+  "bugs": {
+    "url": "https://github.com/LinFeng1997/mdpress/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LinFeng1997/mdpress.git"
+  },
+  "license": "MIT",
+  "author": "LinFeng1997",
+  "main": "index.js",
+  "dependencies": {
+    "@mdpress/markdown": "1.0.0-rc.10",
+    "prismjs": "^1.15.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "gitHead": "1e0eb4de07f505034d05cfcf6c039122d6d138ed"
+}

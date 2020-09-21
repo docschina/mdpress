@@ -1,0 +1,33 @@
+{
+  "name": "@mdpress/theme-default",
+  "version": "1.0.0-rc.10",
+  "description": "theme-default for mdpress",
+  "keywords": [
+    "documentation",
+    "markdown",
+    "mdpress",
+    "generator"
+  ],
+  "homepage": "https://github.com/LinFeng1997/mdpress/packages/@mdpress/theme-default#readme",
+  "bugs": {
+    "url": "https://github.com/LinFeng1997/mdpress/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LinFeng1997/mdpress.git"
+  },
+  "license": "MIT",
+  "author": "LinFeng1997",
+  "main": "index.js",
+  "dependencies": {
+    "@mdpress/plugin-active-header-links": "1.0.0-rc.10",
+    "@mdpress/plugin-container": "1.0.0-rc.10",
+    "@mdpress/plugin-nprogress": "1.0.0-rc.10",
+    "@mdpress/plugin-search": "1.0.0-rc.10",
+    "react-transition-group": "^4.3.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "gitHead": "1e0eb4de07f505034d05cfcf6c039122d6d138ed"
+}

@@ -1,0 +1,7 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`highlight should highlight code 1`] = `
+"<pre v-pre class=\\"language-js\\"><code><span class=\\"token keyword\\">const</span> array <span class=\\"token operator\\">=</span> <span class=\\"token keyword\\">new</span> <span class=\\"token class-name\\">Array</span><span class=\\"token punctuation\\">(</span><span class=\\"token punctuation\\">)</span><span class=\\"token punctuation\\">;</span>
+</code></pre>
+"
+`;

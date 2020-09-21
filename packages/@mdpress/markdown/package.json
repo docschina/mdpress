@@ -1,0 +1,35 @@
+{
+  "name": "@mdpress/markdown",
+  "version": "1.0.0-rc.10",
+  "description": "markdown for mdpress",
+  "keywords": [
+    "documentation",
+    "markdown",
+    "mdpress",
+    "generator"
+  ],
+  "homepage": "https://github.com/LinFeng1997/mdpress/packages/@mdpress/markdown#readme",
+  "bugs": {
+    "url": "https://github.com/LinFeng1997/mdpress/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LinFeng1997/mdpress.git"
+  },
+  "license": "MIT",
+  "author": "LinFeng1997",
+  "main": "index.js",
+  "dependencies": {
+    "@mdpress/shared-utils": "1.0.0-rc.10",
+    "markdown-it": "^8.4.1",
+    "markdown-it-anchor": "^5.0.2",
+    "markdown-it-chain": "^1.3.0",
+    "markdown-it-emoji": "^1.4.0",
+    "markdown-it-table-of-contents": "^0.4.0",
+    "prismjs": "^1.13.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "gitHead": "1e0eb4de07f505034d05cfcf6c039122d6d138ed"
+}
