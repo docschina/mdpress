@@ -65,9 +65,9 @@ export function useLayoutData() {
   })();
 
   const toggleSidebar = (to) => {
-    const isSidebarOpen = typeof to === 'boolean' ? to : !isSidebarOpen;
-    setIsSidebarOpen(isSidebarOpen);
-    store.$emit('toggle-sidebar', isSidebarOpen);
+    const value = typeof to === 'boolean' ? to : !isSidebarOpen;
+    setIsSidebarOpen(value);
+    store.$emit('toggle-sidebar', value);
   };
 
   const onTouchStart = (e) => {
