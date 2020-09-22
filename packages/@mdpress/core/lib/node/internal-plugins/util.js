@@ -24,7 +24,7 @@ exports.sort = function (arr) {
 };
 
 exports.genImportComponentCode = function (filename,key) {
-  return `LazyLoadComponent(() => import("${filename}"),"${key}")`;
+  return `LazyLoadComponent(() => import(${JSON.stringify(filename)}),"${key}")`;
 };
 
 exports.commonImportCode = 'import { LazyLoadComponent } from \'@app/LazyLoader\';\n' +
