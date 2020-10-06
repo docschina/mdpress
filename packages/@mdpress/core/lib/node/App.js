@@ -314,7 +314,7 @@ module.exports = class App {
 
   async resolvePages () {
     // resolve pageFiles
-    const patterns = this.siteConfig.patterns ? this.siteConfig.patterns : ['**/*.md', '**/*.js'];
+    const patterns = this.siteConfig.patterns ? this.siteConfig.patterns : ['**/*.md'];
     patterns.push('!.mdpress', '!node_modules');
 
     if (this.siteConfig.dest) {
