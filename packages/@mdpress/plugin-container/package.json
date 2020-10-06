@@ -1,6 +1,6 @@
 {
   "name": "@mdpress/plugin-container",
-  "version": "1.0.0-rc.10",
+  "version": "1.0.0-rc.11",
   "description": "container plugin for mdpress",
   "keywords": [
     "documentation",

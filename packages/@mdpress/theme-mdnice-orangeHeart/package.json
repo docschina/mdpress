@@ -1,6 +1,6 @@
 {
   "name": "@mdpress/theme-mdnice-orangeHeart",
-  "version": "1.0.0-rc.10",
+  "version": "1.0.0-rc.11",
   "description": "theme-mdnice-orangeHeart for mdpress",
   "keywords": [
     "documentation",
@@ -19,10 +19,10 @@
   "license": "MIT",
   "author": "LinFeng1997",
   "main": "index.js",
+  "dependencies": {
+    "@mdpress/theme-default": "1.0.0-rc.11"
+  },
   "publishConfig": {
     "access": "public"
-  },
-  "dependencies": {
-    "@mdpress/theme-default": "1.0.0-rc.10"
   }
 }
