@@ -1,6 +1,7 @@
 {
   "name": "@mdpress/theme-mdnice-orangeHeart",
   "version": "1.0.0-rc.11",
+  "private": true,
   "description": "theme-mdnice-orangeHeart for mdpress",
   "keywords": [
     "documentation",
