@@ -95,7 +95,8 @@ module.exports = function createBaseConfig (context, isServer) {
         {
           'regenerator': true
         }
-      ]
+      ],
+      require('./babel/autoCssModule')
     ],
     'presets': [
       require.resolve('babel-preset-es2015'),
@@ -123,6 +124,8 @@ module.exports = function createBaseConfig (context, isServer) {
         if (filePath.startsWith(libDir)) {
           return false;
         }
+
+        filePath = filePath.replace(process.cwd(),'');
         // transpile all core packages and mdpress related packages.
         // i.e.
         // @mdpress/*
