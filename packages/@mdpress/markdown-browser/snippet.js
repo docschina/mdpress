@@ -1,6 +1,11 @@
-import snippetMap from '@internal/snippetMap';
-
 module.exports = function snippet (md) {
+  let snippetMap;
+  try {
+    snippetMap = require('@internal/snippetMap');
+  } catch (e) {
+    snippetMap = {};
+  }
+
   function parser (state, startLine, endLine, silent) {
     const CH = '<'.charCodeAt(0);
     const pos = state.bMarks[startLine] + state.tShift[startLine];

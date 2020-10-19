@@ -6,7 +6,7 @@ import { renderSimpleComponent } from 'markdown-it-react-component/dist';
 const indexRE = /(^|.*\/)(index|readme).md(#?.*)$/i;
 
 // Todo: Support Link,compute base
-module.exports = (md, externalAttrs) => {
+export default (md, externalAttrs) => {
   let hasOpenRouterLink = false;
   let hasOpenExternalLink = false;
 
