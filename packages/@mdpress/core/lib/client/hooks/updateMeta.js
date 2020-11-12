@@ -64,10 +64,12 @@ export default function updateMeta(props) {
  */
 function updateMetaTags (newMetaTags, currentMetaTags) {
   if (currentMetaTags) {
-    [...currentMetaTags].forEach(c => {
-      const meta = Array.from(document.head.childNodes).find(item => item.outerHTML === c.outerHTML);
-      meta && document.head.removeChild(meta);
-    });
+    [...currentMetaTags]
+      .filter(c => c.parentNode === document.head)
+      .forEach(c => {
+        const meta = Array.from(document.head.childNodes).find(item => item.outerHTML === c.outerHTML);
+        meta && document.head.removeChild(meta);
+      });
   }
   if (newMetaTags) {
     return newMetaTags.map(m => {
