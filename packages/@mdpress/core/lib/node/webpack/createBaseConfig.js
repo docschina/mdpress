@@ -133,6 +133,11 @@ module.exports = function createBaseConfig (context, isServer) {
         if (/(@mdpress[\/\\][^\/\\]*|mdpress-[^\/\\]*)[\/\\](?!node_modules).*\.js$/.test(filePath)) {
           return false;
         }
+
+        // transpile @babel/runtime until fix for babel/babel#7597 is released
+        if (filePath.includes(path.join('@babel', 'runtime'))) {
+          return false;
+        }
         // Don't transpile node_modules
         return /node_modules/.test(filePath);
       }).end();
@@ -204,7 +209,7 @@ module.exports = function createBaseConfig (context, isServer) {
     });
 
   function createCSSRule (lang, test, loader, options) {
-    const baseRule = config.module.rule(lang).test(test);
+    const baseRule = config.module.rule(lang).test(test).sideEffects(true);
     const modulesRule = baseRule.oneOf('modules').resourceQuery(/module/);
     const normalRule = baseRule.oneOf('normal');
 
