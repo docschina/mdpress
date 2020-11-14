@@ -1,6 +1,6 @@
 {
   "name": "mdpress",
-  "version": "1.0.0-rc.11",
+  "version": "1.0.0-rc.12",
   "description": "Minimalistic doc generator with React component based layout system",
   "keywords": [
     "documentation",
@@ -30,9 +30,9 @@
     ">1%"
   ],
   "dependencies": {
-    "@mdpress/core": "1.0.0-rc.11",
-    "@mdpress/shared-utils": "1.0.0-rc.11",
-    "@mdpress/theme-default": "1.0.0-rc.11",
+    "@mdpress/core": "1.0.0-rc.12",
+    "@mdpress/shared-utils": "1.0.0-rc.12",
+    "@mdpress/theme-default": "1.0.0-rc.12",
     "cac": "^6.5.6",
     "envinfo": "^7.2.0",
     "opencollective-postinstall": "^2.0.2",

@@ -1,6 +1,6 @@
 {
   "name": "@mdpress/plugin-pwa",
-  "version": "1.0.0-rc.11",
+  "version": "1.0.0-rc.12",
   "description": "pwa plugin for mdpress",
   "keywords": [
     "documentation",
@@ -20,7 +20,7 @@
   "author": "LinFeng1997",
   "main": "index.js",
   "dependencies": {
-    "@mdpress/shared-utils": "1.0.0-rc.11",
+    "@mdpress/shared-utils": "1.0.0-rc.12",
     "register-service-worker": "^1.7.0",
     "workbox-build": "^4.3.1"
   },
