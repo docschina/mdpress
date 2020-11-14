@@ -38,10 +38,13 @@ export default function NavLink(props) {
     if (isNonHttpURI) {
       return null;
     }
+    if (item.rel === false) {
+      return null;
+    }
     if (item.rel) {
       return item.rel;
     }
-    return isBlankTarget ? 'noopener noreferrer' : '';
+    return isBlankTarget ? 'noopener noreferrer' : null;
   })();
 
   const focusoutAction = () => {

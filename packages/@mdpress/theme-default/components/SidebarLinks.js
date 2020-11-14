@@ -5,8 +5,9 @@ import SidebarLink from '@theme/components/SidebarLink.js';
 import { isActive as isActiveUtil } from '../util';
 
 export default function SidebarLinks(props) {
-  const [openGroupIndex,setOpenGroupIndex] = useState(0);
-  const { items = [],depth,sidebarDepth,className = '' } = props;
+  const { items = [],depth,sidebarDepth,className = '',initialOpenGroupIndex = 0 } = props;
+  const [openGroupIndex,setOpenGroupIndex] = useState(initialOpenGroupIndex);
+
   let { $route }  = useData();
 
   const refreshIndex = ()  => {

@@ -12,7 +12,7 @@ export default function Home() {
     text: data.actionText
   };
 
-  return <main className="home" aria-labelledby="main-title">
+  return <main className="home"  aria-labelledby={data.heroText !== null ? 'main-title' : null}>
     <header className="hero">
       {data.heroImage && <img src={$withBase(data.heroImage)} alt={data.heroAlt || 'hero'}/>}
 

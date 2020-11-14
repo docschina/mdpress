@@ -43,6 +43,7 @@ export default function SidebarGroup(props) {
         items={item.children}
         sidebarDepth={item.sidebarDepth}
         depth={depth + 1}
+        initialOpenGroupIndex={item.initialOpenGroupIndex}
       />}
     </DropdownTransition>
   </section>;
