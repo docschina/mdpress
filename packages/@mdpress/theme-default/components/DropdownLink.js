@@ -18,6 +18,11 @@ export default function DropdownLink(props) {
     return last(array) === item;
   };
 
+  const handleDropdown = (event) => {
+    const isTriggerByTab = event.detail === 0;
+    if (isTriggerByTab) setOpen(!open);
+  };
+
   useEffect(() => {
     setOpen(false);
   }, [location.pathname]);
@@ -26,6 +31,14 @@ export default function DropdownLink(props) {
     <button
       type="button"
       className="dropdown-title"
+      aria-label={dropdownAriaLabel}
+      onClick={handleDropdown}>
+      <span className="title">{item.text}</span>
+      <span className="arrow down"></span>
+    </button>
+    <button
+      type="button"
+      className="mobile-dropdown-title"
       aria-label={dropdownAriaLabel}
       onClick={toggle}>
       <span className="title">{item.text}</span>
