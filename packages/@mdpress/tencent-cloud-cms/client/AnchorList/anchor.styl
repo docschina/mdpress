@@ -1,0 +1,29 @@
+.anchor {
+  position: fixed;
+  top: 5.2rem;
+  right: 55px;
+  color: #666;
+  background-color: #fff;
+  max-width 'calc((%s - %s - %s) / 2)' % (100vw 27rem $contentWidth)
+}
+
+@media (max-width: 960px) {
+  .anchor {
+    display: none;
+  }
+}
+
+@media (max-width: 1280px) and (min-width: 960px){
+  .ant-anchor {
+    font-size: 12px;
+  }
+
+  .theme-default-content:not(.custom).content {
+    max-width: 600px;
+    padding-right: 10rem;
+  }
+
+  .anchor {
+    max-width 'calc((%s - %s - %s) / 2)' % (100vw 27rem 600px)
+  }
+}

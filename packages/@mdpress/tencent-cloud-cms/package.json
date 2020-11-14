@@ -1,0 +1,31 @@
+{
+  "name": "@mdpress/tencent-cloud-cms",
+  "version": "1.0.0-rc.1",
+  "description": "tencent-cloud-cms for mdpress",
+  "keywords": [
+    "documentation",
+    "markdown",
+    "mdpress",
+    "generator"
+  ],
+  "homepage": "https://github.com/LinFeng1997/mdpress/packages/@mdpress/tencent-cloud-cms#readme",
+  "bugs": {
+    "url": "https://github.com/LinFeng1997/mdpress/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LinFeng1997/mdpress.git"
+  },
+  "license": "MIT",
+  "author": "LinFeng1997",
+  "main": "index.js",
+  "dependencies": {
+    "@cloudbase/js-sdk": "1.3.3",
+    "@mdpress/plugin-back-to-top": "^1.0.0-rc.7",
+    "antd": "^4.8.0",
+    "mdpress": "^1.0.0-rc.12"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
