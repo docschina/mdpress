@@ -1,6 +1,6 @@
 {
   "name": "@mdpress/plugin-last-updated",
-  "version": "1.0.0-rc.12",
+  "version": "1.0.0-rc.13",
   "description": "last-updated plugin for mdpress",
   "keywords": [
     "documentation",

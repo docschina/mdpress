@@ -1,6 +1,6 @@
 {
   "name": "@mdpress/core",
-  "version": "1.0.0-rc.12",
+  "version": "1.0.0-rc.13",
   "description": "Minimalistic doc generator with React component based layout system",
   "keywords": [
     "documentation",
@@ -24,11 +24,11 @@
   ],
   "dependencies": {
     "@babel/core": "^7.8.4",
-    "@mdpress/markdown": "1.0.0-rc.12",
+    "@mdpress/markdown": "1.0.0-rc.13",
     "@mdpress/markdown-browser": "1.0.0-rc.11",
-    "@mdpress/markdown-loader": "1.0.0-rc.12",
-    "@mdpress/plugin-last-updated": "1.0.0-rc.12",
-    "@mdpress/shared-utils": "1.0.0-rc.12",
+    "@mdpress/markdown-loader": "1.0.0-rc.13",
+    "@mdpress/plugin-last-updated": "1.0.0-rc.13",
+    "@mdpress/shared-utils": "1.0.0-rc.13",
     "autoprefixer": "^9.5.1",
     "babel-core": "^6.26.3",
     "babel-loader": "^7.1.5",

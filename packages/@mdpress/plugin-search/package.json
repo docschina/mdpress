@@ -1,6 +1,6 @@
 {
   "name": "@mdpress/plugin-search",
-  "version": "1.0.0-rc.12",
+  "version": "1.0.0-rc.13",
   "description": "search plugin for mdpress",
   "keywords": [
     "documentation",

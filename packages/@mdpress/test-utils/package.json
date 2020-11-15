@@ -1,6 +1,6 @@
 {
   "name": "@mdpress/test-utils",
-  "version": "1.0.0-rc.12",
+  "version": "1.0.0-rc.13",
   "description": "test-utils for mdpress",
   "keywords": [
     "documentation",
@@ -24,7 +24,7 @@
     "@babel/core": "^7.0.0",
     "@babel/preset-env": "^7.0.0",
     "@babel/preset-react": "^7.9.4",
-    "@mdpress/shared-utils": "1.0.0-rc.12",
+    "@mdpress/shared-utils": "1.0.0-rc.13",
     "@types/jest": "^24.0.9",
     "babel-jest": "^24.7.1",
     "enzyme": "^3.10.0",
