@@ -5,6 +5,7 @@
  */
 
 const { normalizeHeadTag } = require('../util/index');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 /**
  * Expose HeadPlugin class.
@@ -17,10 +18,10 @@ module.exports = class HeadPlugin {
 
   apply (compiler) {
     compiler.hooks.compilation.tap('mdpress-site-data', compilation => {
-      compilation.hooks.htmlWebpackPluginAlterAssetTags.tapAsync('mdpress-site-data', (data, cb) => {
+      HtmlWebpackPlugin.getHooks(compilation).alterAssetTagGroups.tapAsync('mdpress-site-data', (data, cb) => {
         try {
           this.tags.forEach(tag => {
-            data.head.push(normalizeHeadTag(tag));
+            data.headTags.push(normalizeHeadTag(tag));
           });
         } catch (e) {
           return cb(e);
