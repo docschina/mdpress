@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { Anchor } from 'antd';
+import Anchor from 'antd/es/anchor';
 import slugify from '@mdpress/shared-utils/lib/slugify';
 import { genAnchors } from './util';
 
