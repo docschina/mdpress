@@ -16,7 +16,7 @@ const NotFound = LayoutComponents.NotFound;
 
 export default function GlobalLayout(props) {
   const params = useParams();
-  const { doc,error } = useDoc(params.path);
+  const { doc,error } = useDoc(params.path || '/',props.staticContext);
   const { data: sidebarItems } = useSidebar(doc._id);
   useUpdateMeta(props);
 

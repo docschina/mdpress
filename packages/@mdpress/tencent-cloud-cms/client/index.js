@@ -2,7 +2,7 @@ import React from 'react';
 import Layout from './Layout';
 
 const isServer = typeof window === 'undefined';
-export default ({ routes }) => {
+export default ({ routes,siteData }) => {
   const notFoundRoute = routes.find(route => route.path === '\*');
   const NotFoundComp = notFoundRoute.component;
 
@@ -13,7 +13,7 @@ export default ({ routes }) => {
 
   routes.unshift({
     name: 'docs',
-    path: '/docs/:path',
+    path: `${siteData.base}docs/:path`,
     component: Layout
   });
 };
