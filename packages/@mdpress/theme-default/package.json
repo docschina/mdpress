@@ -24,6 +24,7 @@
     "@mdpress/plugin-container": "1.0.0-rc.13",
     "@mdpress/plugin-nprogress": "1.0.0-rc.13",
     "@mdpress/plugin-search": "1.0.0-rc.13",
+    "docsearch.js": "^2.5.2",
     "react-transition-group": "^4.3.0"
   },
   "publishConfig": {
