@@ -77,4 +77,4 @@ Hello!
 | :regular | MdPress 默认的生成永久链接的方式，具体实现看 [这里][2] |
 
 [1]:https://en.wikipedia.org/wiki/Link_rot
-[2]:https://github.com/LinFeng1997/mdpress/blob/master/packages/%mdpress/shared-utils/src/fileToPath.ts
+[2]:https://github.com/docschina/mdpress/blob/master/packages/%mdpress/shared-utils/src/fileToPath.ts

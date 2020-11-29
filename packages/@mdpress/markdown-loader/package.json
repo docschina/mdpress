@@ -8,16 +8,16 @@
     "mdpress",
     "generator"
   ],
-  "homepage": "https://github.com/LinFeng1997/mdpress/packages/@mdpress/markdown-loader#readme",
+  "homepage": "https://github.com/docschina/mdpress/packages/@mdpress/markdown-loader#readme",
   "bugs": {
-    "url": "https://github.com/LinFeng1997/mdpress/issues"
+    "url": "https://github.com/docschina/mdpress/issues"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/LinFeng1997/mdpress.git"
+    "url": "git+https://github.com/docschina/mdpress.git"
   },
   "license": "MIT",
-  "author": "LinFeng1997",
+  "author": "docschina",
   "main": "index.js",
   "dependencies": {
     "@mdpress/markdown": "1.0.0-rc.13",

@@ -142,7 +142,7 @@ Specify which pattern of files you want to be resolved.
 
 ### palette.styl
 
-To apply simple overrides to the styling of the [default preset](https://github.com/LinFeng1997/mdpress/blob/master/packages/@mdpress/core/lib/client/style/config.styl) or define some variables to use later, you can create a `.mdpress/styles/palette.styl` file.
+To apply simple overrides to the styling of the [default preset](https://github.com/docschina/mdpress/blob/master/packages/@mdpress/core/lib/client/style/config.styl) or define some variables to use later, you can create a `.mdpress/styles/palette.styl` file.
 
 There are some predefined variables you can tweak:
 
@@ -237,7 +237,7 @@ Whether to show line numbers to the left of each code blocks.
 ### markdown.slugify<Badge text="client"/>
 
 - Type: `Function`
-- Default: [source](https://github.com/LinFeng1997/mdpress/tree/master/packages/@mdpress/shared-utils/src/slugify.ts)
+- Default: [source](https://github.com/docschina/mdpress/tree/master/packages/@mdpress/shared-utils/src/slugify.ts)
 
 Function for transforming [header](../miscellaneous/glossary.md#headers) texts into slugs. Changing this affects the ids/links generated for header anchors, [table of contents](../guide/markdown.md#table-of-contents) and [sidebar](../theme/default-theme-config.md#sidebar) links.
 

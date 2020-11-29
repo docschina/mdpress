@@ -49,7 +49,7 @@ Please note the capitalization of the directory name.
 - `docs/.mdpress/enhanceApp.js`: App level enhancement.
 
 ::: warning Note
-When customizing `templates/ssr.html`, or `templates/dev.html`, it’s best to edit it on the basis of the [default template files](https://github.com/LinFeng1997/mdpress/tree/master/packages/@mdpress/core/lib/client/index.dev.html), otherwise it may cause a build failure.
+When customizing `templates/ssr.html`, or `templates/dev.html`, it’s best to edit it on the basis of the [default template files](https://github.com/docschina/mdpress/tree/master/packages/@mdpress/core/lib/client/index.dev.html), otherwise it may cause a build failure.
 :::
 
 ## Default Page Routing

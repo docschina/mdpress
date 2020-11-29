@@ -28,7 +28,7 @@ module.exports = () => ({
   ],
   theme: '@mdpress/default',
   themeConfig: {
-    repo: 'LinFeng1997/mdpress',
+    repo: 'docschina/mdpress',
     editLinks: true,
     docsDir: 'packages/docs/docs',
     // #697 Provided by the official algolia team.

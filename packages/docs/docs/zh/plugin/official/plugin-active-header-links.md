@@ -3,7 +3,7 @@ title: active-header-links
 metaTitle: 页面滚动时自动激活侧边栏链接的插件 | MdPress
 ---
 
-# [@mdpress/plugin-active-header-links](https://github.com/LinFeng1997/mdpress/tree/master/packages/@mdpress/plugin-active-header-links)
+# [@mdpress/plugin-active-header-links](https://github.com/docschina/mdpress/tree/master/packages/@mdpress/plugin-active-header-links)
 
 > 页面滚动时自动激活侧边栏链接的插件
 

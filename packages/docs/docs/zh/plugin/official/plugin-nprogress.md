@@ -3,7 +3,7 @@ title: nprogress
 metaTitle: Nprogress 插件 | MdPress
 ---
 
-# [@mdpress/plugin-nprogress](https://github.com/LinFeng1997/mdpress/tree/master/packages/%40mdpress/plugin-nprogress)
+# [@mdpress/plugin-nprogress](https://github.com/docschina/mdpress/tree/master/packages/%40mdpress/plugin-nprogress)
 
 > 一个基于 [nprogress](https://github.com/rstacruz/nprogress) 的进度条插件。
 

@@ -295,7 +295,7 @@ module.exports = {
     // 注意 MdPress 没有任何内置的请求库，
     // 你需要自己安装它。
     const rp = require('request-promise')
-    const content = await rp('https://raw.githubusercontent.com/LinFeng1997/mdpress/master/CHANGELOG.md')
+    const content = await rp('https://raw.githubusercontent.com/docschina/mdpress/master/CHANGELOG.md')
     return [
       {
         path: '/changelog/',

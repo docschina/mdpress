@@ -16,7 +16,7 @@ the introduction of the [Plugin API](../plugin/README.md). What are the benefits
 
 ### Decoupling
 
-With plugins, we can implement many of the core functions with plugins, and you can see many built-in plugins [here](https://github.com/LinFeng1997/mdpress/tree/master/packages/%40mdpress/core/lib/node/internal-plugins) that cover many of the core functions of MdPress, which used to blend in all parts of the code base, but now they’re clear at a glance.
+With plugins, we can implement many of the core functions with plugins, and you can see many built-in plugins [here](https://github.com/docschina/mdpress/tree/master/packages/%40mdpress/core/lib/node/internal-plugins) that cover many of the core functions of MdPress, which used to blend in all parts of the code base, but now they’re clear at a glance.
 
 ### Configuration management
 
@@ -110,7 +110,7 @@ cond2(yes, bottom)->stage2
 <!-- textlint-enable -->
 
 ::: warning Note
-When customizing `templates/ssr.html`, or `templates/dev.html`, it’s best to edit it on the basis of the [default template files](https://github.com/LinFeng1997/mdpress/tree/master/packages/@mdpress/core/lib/app/index.dev.html), otherwise it may cause a build failure.
+When customizing `templates/ssr.html`, or `templates/dev.html`, it’s best to edit it on the basis of the [default template files](https://github.com/docschina/mdpress/tree/master/packages/@mdpress/core/lib/app/index.dev.html), otherwise it may cause a build failure.
 :::
 
 ### Overriding
@@ -194,8 +194,8 @@ Then the final value of `name` option will be `bar`.
 
 With the goal of decoupling, we were able to separate MdPress into the following two libraries by introducing monorepo:
 
-- [@mdpress/core](https://github.com/LinFeng1997/mdpress/tree/master/packages/@mdpress/core)：Including the core implementation of `dev`, `build` and `Plugin API`;
-- [@mdpress/theme-default](https://github.com/LinFeng1997/mdpress/tree/master/packages/@mdpress/theme-default)：The default theme you see now.
+- [@mdpress/core](https://github.com/docschina/mdpress/tree/master/packages/@mdpress/core)：Including the core implementation of `dev`, `build` and `Plugin API`;
+- [@mdpress/theme-default](https://github.com/docschina/mdpress/tree/master/packages/@mdpress/theme-default)：The default theme you see now.
 
 Of course, for most users, you don’t need to worry about these three libraries. The [MdPress](https://www.npmjs.com/search?Q=mdpress) package has already assembled them together.
 

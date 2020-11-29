@@ -138,7 +138,7 @@ module.exports = {
 
 ### palette.styl
 
-如果要对[默认预设](https://github.com/LinFeng1997/mdpress/blob/master/packages/@mdpress/core/lib/client/style/config.styl)的样式进行简单的替换，或者定义一些变量供以后使用，你可以创建一个 `.mdpress/styles/palette.styl` 文件。
+如果要对[默认预设](https://github.com/docschina/mdpress/blob/master/packages/@mdpress/core/lib/client/style/config.styl)的样式进行简单的替换，或者定义一些变量供以后使用，你可以创建一个 `.mdpress/styles/palette.styl` 文件。
 
 你可以调整的一些变量如下:
 
@@ -234,7 +234,7 @@ Markdown 分为 Node 端和客户端的配置，[客户端的配置](../guide/ba
 ### markdown.slugify<Badge text="client"/>
 
 - 类型: `Function`
-- 默认值: [source](https://github.com/LinFeng1997/mdpress/tree/master/packages/@mdpress/shared-utils/src/slugify.ts)
+- 默认值: [source](https://github.com/docschina/mdpress/tree/master/packages/@mdpress/shared-utils/src/slugify.ts)
 
 一个将标题文本转换为 slug 的函数。修改它会影响 [标题](../miscellaneous/glossary.md#headers)、[目录](../guide/markdown.md#目录)、以及[侧边栏](../theme/default-theme-config.md#侧边栏)链接的 id 和 链接。
 

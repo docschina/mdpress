@@ -27,7 +27,7 @@ files.forEach(pkg => {
       },
       'repository': {
         'type': 'git',
-        'url': 'git+https://github.com/LinFeng1997/mdpress.git'
+        'url': 'git+https://github.com/docschina/mdpress.git'
       },
       'keywords': [
         'documentation',
@@ -35,12 +35,12 @@ files.forEach(pkg => {
         'mdpress',
         'generator'
       ],
-      'author': 'LinFeng1997',
+      'author': 'docschina',
       'license': 'MIT',
       'bugs': {
-        'url': 'https://github.com/LinFeng1997/mdpress/issues'
+        'url': 'https://github.com/docschina/mdpress/issues'
       },
-      'homepage': `https://github.com/LinFeng1997/mdpress/packages/@mdpress/${pkg}#readme`
+      'homepage': `https://github.com/docschina/mdpress/packages/@mdpress/${pkg}#readme`
     };
     fs.writeFileSync(pkgPath, JSON.stringify(json, null, 2));
   }

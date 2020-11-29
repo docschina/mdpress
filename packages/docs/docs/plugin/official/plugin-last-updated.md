@@ -3,7 +3,7 @@ title: last-updated
 metaTitle: Last-Updated Plugin | MdPress
 ---
 
-# [@mdpress/plugin-last-updated](https://github.com/LinFeng1997/mdpress/tree/master/packages/@mdpress/plugin-last-updated)
+# [@mdpress/plugin-last-updated](https://github.com/docschina/mdpress/tree/master/packages/@mdpress/plugin-last-updated)
 
 > last-updated plugin for MdPress
 

@@ -299,7 +299,7 @@ module.exports = {
     // Note that MdPress doesn't have request library built-in
     // you need to install it yourself.
     const rp = require('request-promise')
-    const content = await rp('https://raw.githubusercontent.com/LinFeng1997/mdpress/master/CHANGELOG.md')
+    const content = await rp('https://raw.githubusercontent.com/docschina/mdpress/master/CHANGELOG.md')
     return [
       {
         path: '/changelog/',

@@ -3,7 +3,7 @@ title: pwa
 metaTitle: PWA Plugin | MdPress
 ---
 
-# [@mdpress/plugin-pwa](https://github.com/LinFeng1997/mdpress/tree/master/packages/%40mdpress/plugin-pwa)
+# [@mdpress/plugin-pwa](https://github.com/docschina/mdpress/tree/master/packages/%40mdpress/plugin-pwa)
 
 > PWA plugin
 

@@ -50,7 +50,7 @@ MdPress 支持重定向到干净链接。如果一个链接 `/foo` 找不到，M
 外部的链接将会被自动地设置为  `target="_blank" rel="noopener noreferrer"`:
 
 - [react.org](https://reactjs.org/)
-- [MdPress on GitHub](https://github.com/LinFeng1997/mdpress)
+- [MdPress on GitHub](https://github.com/docschina/mdpress)
 
 你可以自定义通过配置 enhanceApp 中 `mdConfig.externalLinks` 来自定义外部链接的特性。
 

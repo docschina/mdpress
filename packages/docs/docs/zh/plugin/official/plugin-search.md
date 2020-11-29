@@ -3,7 +3,7 @@ title: search
 metaTitle: Search 插件 | MdPress
 ---
 
-# [@mdpress/plugin-search](https://github.com/LinFeng1997/mdpress/tree/master/packages/@mdpress/plugin-search)
+# [@mdpress/plugin-search](https://github.com/docschina/mdpress/tree/master/packages/@mdpress/plugin-search)
 
 > 基于 [Headers](../../miscellaneous/glossary.md#headers) 的搜索插件
 

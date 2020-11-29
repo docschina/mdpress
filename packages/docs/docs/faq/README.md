@@ -53,8 +53,8 @@ module.exports = (options, ctx) => ({
 
 **Example:**
 
-- [@mdpress/plugin-pwa](https://github.com/LinFeng1997/mdpress/tree/master/packages/@mdpress/plugin-pwa/index.js)：auto config PWA.
-- [@mdpress/plugin-google-analytics](https://github.com/LinFeng1997/mdpress/blob/master/packages/@mdpress/plugin-google-analytics/enhanceAppFile.js): Automatically set up Google Analytics.
+- [@mdpress/plugin-pwa](https://github.com/docschina/mdpress/tree/master/packages/@mdpress/plugin-pwa/index.js)：auto config PWA.
+- [@mdpress/plugin-google-analytics](https://github.com/docschina/mdpress/blob/master/packages/@mdpress/plugin-google-analytics/enhanceAppFile.js): Automatically set up Google Analytics.
 
 ## When do I need to use `clientDynamicModules`?
 
@@ -63,4 +63,4 @@ module.exports = (options, ctx) => ({
 
 **Example:**
 
-- [@mdpress/plugin-active-header-links](https://github.com/LinFeng1997/mdpress-plugin-active-header-links/blob/master/src/node/index.ts#L208): Use compile-time metadata to generate some blog-related dynamic modules and initialize them on the client through `enhanceAppFiles`.
+- [@mdpress/plugin-active-header-links](https://github.com/docschina/mdpress-plugin-active-header-links/blob/master/src/node/index.ts#L208): Use compile-time metadata to generate some blog-related dynamic modules and initialize them on the client through `enhanceAppFiles`.

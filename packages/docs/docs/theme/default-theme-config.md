@@ -25,7 +25,7 @@ features:
   details: Enjoy the dev experience of React + webpack, use React components in markdown, and develop custom themes with React.
 - title: Performant
   details: MdPress generates pre-rendered static HTML for each page, and runs as an SPA once a page is loaded.
-footer: MIT Licensed | Copyright © 2020-present LinFeng1997
+footer: MIT Licensed | Copyright © 2020-present docschina
 ---
 ```
 
@@ -465,7 +465,7 @@ Providing `themeConfig.repo` auto generates a GitHub link in the navbar and "Edi
 module.exports = {
   themeConfig: {
     // Assumes GitHub. Can also be a full GitLab url.
-    repo: 'LinFeng1997/mdpress',
+    repo: 'docschina/mdpress',
     // Customising the header label
     // Defaults to "GitHub"/"GitLab"/"Bitbucket" depending on `themeConfig.repo`
     repoLabel: 'Contribute!',
@@ -473,7 +473,7 @@ module.exports = {
     // Optional options for generating "Edit this page" link
 
     // if your docs are in a different repo from your main project:
-    docsRepo: 'LinFeng1997/mdpress',
+    docsRepo: 'docschina/mdpress',
     // if your docs are not at the root of the repo:
     docsDir: 'docs',
     // if your docs are in a specific branch (defaults to 'master'):

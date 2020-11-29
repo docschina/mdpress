@@ -3,7 +3,7 @@ home: true
 heroImage: /hero.png
 actionText: Get Started →
 actionLink: /guide/
-footer: MIT Licensed | Copyright © 2020-present LinFeng1997
+footer: MIT Licensed | Copyright © 2020-present docschina
 ---
 
 <div style="text-align: center">

@@ -53,8 +53,8 @@ module.exports = (options, ctx) => ({
 
 **比如：**
 
-- [@mdpress/plugin-pwa](https://github.com/LinFeng1997/mdpress/tree/master/packages/@mdpress/plugin-pwa/index.js)：自动配置 PWA
-- [@mdpress/plugin-google-analytics](https://github.com/LinFeng1997/mdpress/blob/master/packages/@mdpress/plugin-google-analytics/enhanceAppFile.js)：自动配置 Google Analytics
+- [@mdpress/plugin-pwa](https://github.com/docschina/mdpress/tree/master/packages/@mdpress/plugin-pwa/index.js)：自动配置 PWA
+- [@mdpress/plugin-google-analytics](https://github.com/docschina/mdpress/blob/master/packages/@mdpress/plugin-google-analytics/enhanceAppFile.js)：自动配置 Google Analytics
 
 ## 什么时候需要使用 `clientDynamicModules`?
 
@@ -63,5 +63,5 @@ module.exports = (options, ctx) => ({
 
 **比如：**
 
-- [@mdpress/plugin-active-header-links](https://github.com/LinFeng1997/mdpress-plugin-active-header-links/blob/master/src/node/index.ts#L208)：使用编译期元数据生成一些博客相关的动态模块并通过 `enhanceAppFiles` 将他们在客户端初始化
+- [@mdpress/plugin-active-header-links](https://github.com/docschina/mdpress-plugin-active-header-links/blob/master/src/node/index.ts#L208)：使用编译期元数据生成一些博客相关的动态模块并通过 `enhanceAppFiles` 将他们在客户端初始化
 

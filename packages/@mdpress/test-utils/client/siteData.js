@@ -21,7 +21,7 @@ export default {
     }
   ],
   "themeConfig": {
-    "repo": "LinFeng1997/mdpress",
+    "repo": "docschina/mdpress",
     "editLinks": true,
     "docsDir": "docs",
     "locales": {

@@ -3,7 +3,7 @@ title: medium-zoom
 metaTitle: Medium-Zoom Plugin | MdPress
 ---
 
-# [@mdpress/plugin-medium-zoom](https://github.com/LinFeng1997/mdpress/tree/master/packages/%40vuepress/plugin-medium-zoom)
+# [@mdpress/plugin-medium-zoom](https://github.com/docschina/mdpress/tree/master/packages/%40vuepress/plugin-medium-zoom)
 
 > [medium-zoom](https://github.com/francoischalifour/medium-zoom) plugin
 

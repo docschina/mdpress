@@ -50,7 +50,7 @@ Regardless of whether the permalink and clean-urls plugins are used, your relati
 Outbound links automatically gets `target="_blank" rel="noopener noreferrer"`:
 
 - [react.org](https://reactjs.org/)
-- [MdPress on GitHub](https://github.com/LinFeng1997/mdpress)
+- [MdPress on GitHub](https://github.com/docschina/mdpress)
 
 You can customize the attributes added to external links by setting enhanceApp  mdConfig.externalLinks.
 

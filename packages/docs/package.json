@@ -8,16 +8,16 @@
     "generator",
     "markdown"
   ],
-  "homepage": "https://github.com/LinFeng1997/mdpress#readme",
+  "homepage": "https://github.com/docschina/mdpress#readme",
   "bugs": {
-    "url": "https://github.com/LinFeng1997/mdpress/issues"
+    "url": "https://github.com/docschina/mdpress/issues"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/LinFeng1997/mdpress.git"
+    "url": "git+https://github.com/docschina/mdpress.git"
   },
   "license": "MIT",
-  "author": "LinFeng1997",
+  "author": "docschina",
   "scripts": {
     "build": "mdpress build docs --temp .temp",
     "build:debug": "node --inspect-brk node_modules/.bin/mdpress build docs --temp .temp",

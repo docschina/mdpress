@@ -3,7 +3,7 @@ title: nprogress
 metaTitle: Nprogress Plugin | MdPress
 ---
 
-# [@mdpress/plugin-nprogress](https://github.com/LinFeng1997/mdpress/tree/master/packages/%40vuepress/plugin-nprogress)
+# [@mdpress/plugin-nprogress](https://github.com/docschina/mdpress/tree/master/packages/%40vuepress/plugin-nprogress)
 
 > A progress bar plugin based on [nprogress](https://github.com/rstacruz/nprogress).
 

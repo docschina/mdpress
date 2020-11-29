@@ -3,7 +3,7 @@ title: google-analytics
 metaTitle: Google Analytics Plugin | MdPress
 ---
 
-# [@mdpress/plugin-google-analytics](https://github.com/LinFeng1997/mdpress/tree/master/packages/%40vuepress/plugin-google-analytics)
+# [@mdpress/plugin-google-analytics](https://github.com/docschina/mdpress/tree/master/packages/%40vuepress/plugin-google-analytics)
 
 
 > Google analytics plugin

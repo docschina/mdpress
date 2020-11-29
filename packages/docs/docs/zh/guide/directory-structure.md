@@ -45,7 +45,7 @@ MdPress 遵循 **“约定优于配置”** 的原则，推荐的目录结构如
 - `docs/.mdpres/enhanceApp.js`: 客户端应用的增强。
 
 ::: warning 注意
-当你想要去自定义 `templates/ssr.html` 或 `templates/dev.html` 时，最好基于 [默认的模板文件](https://github.com/LinFeng1997/mdpress/blob/master/packages/%40mdpress/core/lib/client/index.dev.html) 来修改，否则可能会导致构建出错。
+当你想要去自定义 `templates/ssr.html` 或 `templates/dev.html` 时，最好基于 [默认的模板文件](https://github.com/docschina/mdpress/blob/master/packages/%40mdpress/core/lib/client/index.dev.html) 来修改，否则可能会导致构建出错。
 :::
 
 **同时阅读:**

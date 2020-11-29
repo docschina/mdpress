@@ -8,17 +8,17 @@
     "markdown",
     "react"
   ],
-  "homepage": "https://github.com/LinFeng1997/mdpress#readme",
+  "homepage": "https://github.com/docschina/mdpress#readme",
   "bugs": {
-    "url": "https://github.com/LinFeng1997/mdpress/issues"
+    "url": "https://github.com/docschina/mdpress/issues"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/LinFeng1997/mdpress.git",
+    "url": "git+https://github.com/docschina/mdpress.git",
     "directory": "packages/mdpress"
   },
   "license": "MIT",
-  "author": "LinFeng1997",
+  "author": "docschina",
   "main": "index.js",
   "bin": {
     "mdpress": "cli.js"
@@ -48,7 +48,7 @@
   "gitHead": "3d10ff1341a3b3fe90d129c4d48cf63e088016bd",
   "maintainers": [
     {
-      "name": "LinFeng1997",
+      "name": "docschina",
       "email": "ynublow@gmail.com"
     }
   ]

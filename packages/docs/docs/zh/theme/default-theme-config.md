@@ -23,7 +23,7 @@ features:
   details: 享受 React + webpack 的开发体验，在 Markdown 中使用 React 组件，同时可以使用 React 来开发自定义主题。
 - title: 高性能
   details: MdPress 为每个页面预渲染生成静态的 HTML，同时在页面被加载的时候，将作为 SPA 运行。
-footer: MIT Licensed | Copyright © 2020-present LinFeng1997
+footer: MIT Licensed | Copyright © 2020-present docschina
 ---
 ```
 
@@ -448,7 +448,7 @@ next: false
 module.exports = {
   themeConfig: {
     // 假定是 GitHub. 同时也可以是一个完整的 GitLab URL
-    repo: 'LinFeng1997/mdpress',
+    repo: 'docschina/mdpress',
     // 自定义仓库链接文字。默认从 `themeConfig.repo` 中自动推断为
     // "GitHub"/"GitLab"/"Bitbucket" 其中之一，或是 "Source"。
     repoLabel: '查看源码',
@@ -456,7 +456,7 @@ module.exports = {
     // 以下为可选的编辑链接选项
 
     // 假如你的文档仓库和项目本身不在一个仓库：
-    docsRepo: 'LinFeng1997/mdpress',
+    docsRepo: 'docschina/mdpress',
     // 假如文档不是放在仓库的根目录下：
     docsDir: 'docs',
     // 假如文档放在一个特定的分支下：

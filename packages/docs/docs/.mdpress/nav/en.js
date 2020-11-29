@@ -58,7 +58,7 @@ module.exports = [
         items: [
           {
             text: 'Changelog',
-            link: 'https://github.com/LinFeng1997/mdpress/blob/master/CHANGELOG.md'
+            link: 'https://github.com/docschina/mdpress/blob/master/CHANGELOG.md'
           }
         ]
       }

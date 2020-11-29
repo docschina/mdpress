@@ -8,17 +8,17 @@
     "markdown",
     "mdpress"
   ],
-  "homepage": "https://github.com/LinFeng1997/mdpress/packages/@mdpress/shared-utils#readme",
+  "homepage": "https://github.com/docschina/mdpress/packages/@mdpress/shared-utils#readme",
   "bugs": {
-    "url": "https://github.com/LinFeng1997/mdpress/issues"
+    "url": "https://github.com/docschina/mdpress/issues"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/LinFeng1997/mdpress.git",
+    "url": "git+https://github.com/docschina/mdpress.git",
     "directory": "packages/@mdpress/shared-utils"
   },
   "license": "MIT",
-  "author": "LinFeng1997",
+  "author": "docschina",
   "main": "lib/index.js",
   "types": "types/index.d.ts",
   "files": [
