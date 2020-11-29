@@ -158,7 +158,6 @@ module.exports = class DevProcess extends EventEmitter {
 
     config
       .plugin('html')
-      // Todo:using a fork of html-webpack-plugin to avoid it requiring webpack
       // internals from an incompatible version.
       .use(require('html-webpack-plugin'), [{
         template: this.context.devTemplate

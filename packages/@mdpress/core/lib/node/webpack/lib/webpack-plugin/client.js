@@ -6,6 +6,8 @@ Object.defineProperty(exports, '__esModule', { value: true });
 var util_1 = require('./util');
 var hash_sum_1 = __importDefault(require('hash-sum'));
 var lodash_1 = require('lodash');
+
+const styleJsChunkreg = /styles\.\w{8}\.js$/;
 var ReactSSRClientPlugin = /** @class */ (function () {
   function ReactSSRClientPlugin(options) {
     if (options === void 0) { options = {}; }
@@ -17,11 +19,15 @@ var ReactSSRClientPlugin = /** @class */ (function () {
     var _this = this;
     util_1.onEmit(compiler, 'react-client-plugin', function (compilation, cb) {
       var stats = compilation.getStats().toJson();
-      var allFiles = lodash_1.uniq(stats.assets.map(function (a) { return a.name; }));
+
+      var allFiles = lodash_1.uniq(stats.assets.map(function (a) { return a.name; }))
+      // Avoid preloading / injecting the style chunk
+        .filter(file => !styleJsChunkreg.test(file));
       var initialFiles = lodash_1.uniq(Object.keys(stats.entrypoints)
         .map(function (name) { return stats.entrypoints[name].assets; })
         .reduce(function (assets, all) { return all.concat(assets); }, [])
-        .filter(function (file) { return util_1.isJS(file) || util_1.isCSS(file); }));
+        .filter(function (file) { return util_1.isJS(file) || util_1.isCSS(file); })
+        .filter(function (file) { return !styleJsChunkreg.test(file); }));
       var asyncFiles = allFiles
         .filter(function (file) { return util_1.isJS(file) || util_1.isCSS(file); })
         .filter(function (file) { return initialFiles.indexOf(file) < 0; });
