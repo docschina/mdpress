@@ -3,7 +3,7 @@ title: last-updated
 metaTitle: Last-Updated 插件 | MdPress
 ---
 
-# [@mdpress/plugin-last-updated](https://github.com/LinFeng1997/mdpress/tree/master/packages/@mdpress/plugin-last-updated)
+# [@mdpress/plugin-last-updated](https://github.com/docschina/mdpress/tree/master/packages/@mdpress/plugin-last-updated)
 
 > last-updated 插件。
 
