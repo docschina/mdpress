@@ -1,6 +1,6 @@
 {
   "name": "@mdpress/markdown-browser",
-  "version": "1.0.0-rc.13",
+  "version": "1.0.0-rc.14",
   "description": "markdown-browser for mdpress",
   "keywords": [
     "documentation",
@@ -20,7 +20,7 @@
   "author": "docschina",
   "main": "index.js",
   "dependencies": {
-    "@mdpress/markdown": "1.0.0-rc.13",
+    "@mdpress/markdown": "1.0.0-rc.14",
     "prismjs": "^1.15.0"
   },
   "publishConfig": {
