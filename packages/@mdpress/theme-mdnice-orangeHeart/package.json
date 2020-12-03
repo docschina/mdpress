@@ -1,0 +1,29 @@
+{
+  "name": "@mdpress/theme-mdnice-orangeHeart",
+  "version": "1.0.0-rc.13",
+  "private": true,
+  "description": "theme-mdnice-orangeHeart for mdpress",
+  "keywords": [
+    "documentation",
+    "markdown",
+    "mdpress",
+    "generator"
+  ],
+  "homepage": "https://github.com/docschina/mdpress/packages/@mdpress/theme-mdnice-orangeHeart#readme",
+  "bugs": {
+    "url": "https://github.com/docschina/mdpress/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/docschina/mdpress.git"
+  },
+  "license": "MIT",
+  "author": "docschina",
+  "main": "index.js",
+  "dependencies": {
+    "@mdpress/theme-default": "1.0.0-rc.13"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}

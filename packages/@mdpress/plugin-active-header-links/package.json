@@ -1,0 +1,29 @@
+{
+  "name": "@mdpress/plugin-active-header-links",
+  "version": "1.0.0-rc.13",
+  "description": "active-header-links plugin for mdpress",
+  "keywords": [
+    "documentation",
+    "markdown",
+    "mdpress",
+    "generator"
+  ],
+  "homepage": "https://github.com/docschina/mdpress/packages/@mdpress/plugin-active-header-links#readme",
+  "bugs": {
+    "url": "https://github.com/docschina/mdpress/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/docschina/mdpress.git"
+  },
+  "license": "MIT",
+  "author": "docschina",
+  "main": "index.js",
+  "dependencies": {
+    "lodash.debounce": "^4.0.8"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "gitHead": "3d10ff1341a3b3fe90d129c4d48cf63e088016bd"
+}

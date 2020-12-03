@@ -1,0 +1,55 @@
+{
+  "name": "mdpress",
+  "version": "1.0.0-rc.13",
+  "description": "Minimalistic doc generator with React component based layout system",
+  "keywords": [
+    "documentation",
+    "generator",
+    "markdown",
+    "react"
+  ],
+  "homepage": "https://github.com/docschina/mdpress#readme",
+  "bugs": {
+    "url": "https://github.com/docschina/mdpress/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/docschina/mdpress.git",
+    "directory": "packages/mdpress"
+  },
+  "license": "MIT",
+  "author": "docschina",
+  "main": "index.js",
+  "bin": {
+    "mdpress": "cli.js"
+  },
+  "scripts": {
+    "postinstall": "opencollective-postinstall || exit 0"
+  },
+  "browserslist": [
+    ">1%"
+  ],
+  "dependencies": {
+    "@mdpress/core": "1.0.0-rc.13",
+    "@mdpress/shared-utils": "1.0.0-rc.13",
+    "@mdpress/theme-default": "1.0.0-rc.13",
+    "cac": "^6.5.6",
+    "envinfo": "^7.2.0",
+    "opencollective-postinstall": "^2.0.2",
+    "update-notifier": "^4.0.0"
+  },
+  "engines": {
+    "node": ">=8.6"
+  },
+  "collective": {
+    "type": "opencollective",
+    "url": "https://opencollective.com/mdpress"
+  },
+  "gitHead": "3d10ff1341a3b3fe90d129c4d48cf63e088016bd",
+  "maintainers": [
+    {
+      "name": "docschina",
+      "email": "ynublow@gmail.com"
+    }
+  ]
+}

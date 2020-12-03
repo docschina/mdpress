@@ -1,0 +1,27 @@
+.go-to-top {
+  cursor: pointer;
+  position: fixed;
+  bottom: 2rem;
+  right: 2.5rem;
+  width: 2rem;
+  color: $accentColor;
+  z-index: 1;
+}
+
+.go-to-top:hover {
+  color: lighten($accentColor, 30%);
+}
+
+@media (max-width: 959px) {
+  .go-to-top {
+    display: none;
+  }
+}
+
+.fade-enter-active, .fade-leave-active {
+  transition: opacity 0.3s;
+}
+
+.fade-enter, .fade-leave-to {
+  opacity: 0;
+}

@@ -1,0 +1,52 @@
+{
+  "name": "@mdpress/shared-utils",
+  "version": "1.0.0-rc.13",
+  "description": "shared-utils for mdpress",
+  "keywords": [
+    "documentation",
+    "generator",
+    "markdown",
+    "mdpress"
+  ],
+  "homepage": "https://github.com/docschina/mdpress/packages/@mdpress/shared-utils#readme",
+  "bugs": {
+    "url": "https://github.com/docschina/mdpress/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/docschina/mdpress.git",
+    "directory": "packages/@mdpress/shared-utils"
+  },
+  "license": "MIT",
+  "author": "docschina",
+  "main": "lib/index.js",
+  "types": "types/index.d.ts",
+  "files": [
+    "lib",
+    "types"
+  ],
+  "scripts": {
+    "tsc": "tsc",
+    "update-index": "node scripts/update-index.js"
+  },
+  "dependencies": {
+    "chalk": "^2.3.2",
+    "diacritics": "^1.3.0",
+    "escape-html": "^1.0.3",
+    "fs-extra": "^7.0.1",
+    "globby": "^9.2.0",
+    "gray-matter": "^4.0.1",
+    "hash-sum": "^1.0.2",
+    "markdown-it-emoji": "^1.4.0",
+    "semver": "^6.0.0",
+    "toml": "^3.0.0",
+    "upath": "^1.1.0"
+  },
+  "devDependencies": {
+    "@types/diacritics": "^1.3.1"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "gitHead": "3d10ff1341a3b3fe90d129c4d48cf63e088016bd"
+}

@@ -1,0 +1,29 @@
+{
+  "name": "@mdpress/plugin-container",
+  "version": "1.0.0-rc.13",
+  "description": "container plugin for mdpress",
+  "keywords": [
+    "documentation",
+    "markdown",
+    "mdpress",
+    "generator"
+  ],
+  "homepage": "https://github.com/docschina/mdpress/packages/@mdpress/plugin-container#readme",
+  "bugs": {
+    "url": "https://github.com/docschina/mdpress/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/docschina/mdpress.git"
+  },
+  "license": "MIT",
+  "author": "docschina",
+  "main": "index.js",
+  "dependencies": {
+    "markdown-it-container": "^2.0.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "gitHead": "3d10ff1341a3b3fe90d129c4d48cf63e088016bd"
+}

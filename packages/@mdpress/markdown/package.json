@@ -1,0 +1,35 @@
+{
+  "name": "@mdpress/markdown",
+  "version": "1.0.0-rc.13",
+  "description": "markdown for mdpress",
+  "keywords": [
+    "documentation",
+    "markdown",
+    "mdpress",
+    "generator"
+  ],
+  "homepage": "https://github.com/docschina/mdpress/packages/@mdpress/markdown#readme",
+  "bugs": {
+    "url": "https://github.com/docschina/mdpress/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/docschina/mdpress.git"
+  },
+  "license": "MIT",
+  "author": "docschina",
+  "main": "index.js",
+  "dependencies": {
+    "@mdpress/shared-utils": "1.0.0-rc.13",
+    "markdown-it": "^8.4.1",
+    "markdown-it-anchor": "^5.0.2",
+    "markdown-it-chain": "^1.3.0",
+    "markdown-it-emoji": "^1.4.0",
+    "markdown-it-table-of-contents": "^0.4.0",
+    "prismjs": "^1.13.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "gitHead": "3d10ff1341a3b3fe90d129c4d48cf63e088016bd"
+}

@@ -1,0 +1,31 @@
+{
+  "name": "@mdpress/markdown-loader",
+  "version": "1.0.0-rc.13",
+  "description": "markdown-loader for mdpress",
+  "keywords": [
+    "documentation",
+    "markdown",
+    "mdpress",
+    "generator"
+  ],
+  "homepage": "https://github.com/docschina/mdpress/packages/@mdpress/markdown-loader#readme",
+  "bugs": {
+    "url": "https://github.com/docschina/mdpress/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/docschina/mdpress.git"
+  },
+  "license": "MIT",
+  "author": "docschina",
+  "main": "index.js",
+  "dependencies": {
+    "@mdpress/markdown": "1.0.0-rc.13",
+    "loader-utils": "^1.1.0",
+    "lru-cache": "^5.1.1"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "gitHead": "3d10ff1341a3b3fe90d129c4d48cf63e088016bd"
+}

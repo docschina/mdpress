@@ -1,0 +1,31 @@
+{
+  "name": "@mdpress/plugin-pwa",
+  "version": "1.0.0-rc.13",
+  "description": "pwa plugin for mdpress",
+  "keywords": [
+    "documentation",
+    "markdown",
+    "mdpress",
+    "generator"
+  ],
+  "homepage": "https://github.com/docschina/mdpress/packages/@mdpress/plugin-pwa#readme",
+  "bugs": {
+    "url": "https://github.com/docschina/mdpress/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/docschina/mdpress.git"
+  },
+  "license": "MIT",
+  "author": "docschina",
+  "main": "index.js",
+  "dependencies": {
+    "@mdpress/shared-utils": "1.0.0-rc.13",
+    "register-service-worker": "^1.7.0",
+    "workbox-build": "^4.3.1"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "gitHead": "3d10ff1341a3b3fe90d129c4d48cf63e088016bd"
+}
