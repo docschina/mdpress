@@ -61,7 +61,7 @@ function App(props) {
   const children = <React.Fragment>
     <Switch>
       {routes.map(route =>
-        route.redirect ? <Redirect key={route.path} strict={false} exact from={route.path} to={route.redirect}/> : <Route exact strict={false} path={route.path} key={route.path} component={route.component} render={route.render}/>
+        route.redirect ? <Redirect key={route.path} strict={false} exact from={route.path} to={route.redirect}/> : <Route exact={route.exact != null ? route.exact : true} strict={false} path={route.path} key={route.path} component={route.component} render={route.render}/>
       )}
     </Switch>
     {globalUIComponents.map((name,index) => {
