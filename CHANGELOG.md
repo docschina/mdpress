@@ -1,3 +1,7 @@
+# [1.0.0-rc.15](https://github.com/docschina/mdpress/compare/v1.0.0-rc.14...v1.0.0-rc.15) (2020-12-18)
+
+
+
 # [1.0.0-rc.13](https://github.com/docschina/mdpress/compare/v1.0.0-rc.12...v1.0.0-rc.13) (2020-11-15)
 
 
