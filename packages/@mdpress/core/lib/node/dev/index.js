@@ -223,6 +223,7 @@ module.exports = class DevProcess extends EventEmitter {
       },
       overlay: false,
       host: this.host,
+      port: this.port,
       contentBase,
       before: (app, server) => {
         if (fs.existsSync(contentBase)) {
