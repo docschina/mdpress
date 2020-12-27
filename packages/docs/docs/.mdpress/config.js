@@ -81,7 +81,13 @@ module.exports = () => ({
         path.resolve(__dirname,'markdown/upgrade-container.js')
       ]
     } ],
-    ['flowchart']
+    ['flowchart'],
+    [
+      'serve',
+      {
+        removeMainfest: false
+      }
+    ]
   ],
   extraWatchFiles: [
     '.mdpress/nav/en.js',

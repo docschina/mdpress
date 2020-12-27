@@ -6797,6 +6797,11 @@ etag@~1.8.1:
   resolved "http://r.cnpmjs.org/etag/download/etag-1.8.1.tgz#41ae2eeb65efa62268aebfea83ac7d79299b0887"
   integrity sha1-Qa4u62XvpiJorr/qg6x9eSmbCIc=
 
+eve-raphael@0.5.0:
+  version "0.5.0"
+  resolved "https://r.cnpmjs.org/eve-raphael/download/eve-raphael-0.5.0.tgz#17c754b792beef3fa6684d79cf5a47c63c4cda30"
+  integrity sha1-F8dUt5K+7z+maE15z1pHxjxM2jA=
+
 eventemitter3@^3.1.0:
   version "3.1.2"
   resolved "http://r.cnpmjs.org/eventemitter3/download/eventemitter3-3.1.2.tgz#2d3d48f9c346698fce83a85d7d664e98535df6e7"
@@ -6895,7 +6900,7 @@ expect@^24.9.0:
     jest-message-util "^24.9.0"
     jest-regex-util "^24.9.0"
 
-express@^4.17.1:
+express@^4.16.4, express@^4.17.1:
   version "4.17.1"
   resolved "http://r.cnpmjs.org/express/download/express-4.17.1.tgz#4491fc38605cf51f8629d39c2b5d026f98a4c134"
   integrity sha1-RJH8OGBc9R+GKdOcK10Cb5ikwTQ=
@@ -7196,6 +7201,13 @@ flatted@^2.0.0:
   version "2.0.2"
   resolved "http://r.cnpmjs.org/flatted/download/flatted-2.0.2.tgz#4575b21e2bcee7434aa9be662f4b7b5f9c2b5138"
   integrity sha1-RXWyHivO50NKqb5mL0t7X5wrUTg=
+
+flowchart.js@^1.11.3:
+  version "1.15.0"
+  resolved "https://r.cnpmjs.org/flowchart.js/download/flowchart.js-1.15.0.tgz#132ba2df14af0a65e67280026ef05a1ffd16569f"
+  integrity sha1-Eyui3xSvCmXmcoACbvBaH/0WVp8=
+  dependencies:
+    raphael "2.3.0"
 
 flush-write-stream@^1.0.0:
   version "1.1.1"
@@ -10166,6 +10178,29 @@ mdn-data@2.0.6:
   resolved "http://r.cnpmjs.org/mdn-data/download/mdn-data-2.0.6.tgz#852dc60fcaa5daa2e8cf6c9189c440ed3e042978"
   integrity sha1-hS3GD8ql2qLoz2yRicRA7T4EKXg=
 
+mdpress-plugin-flowchart@^1.0.0-rc.2:
+  version "1.0.0-rc.2"
+  resolved "https://r.cnpmjs.org/mdpress-plugin-flowchart/download/mdpress-plugin-flowchart-1.0.0-rc.2.tgz#126dbb8117d07681e44697dbc574318e5664b13e"
+  integrity sha1-Em27gRfQdoHkRpfbxXQxjlZksT4=
+  dependencies:
+    flowchart.js "^1.11.3"
+
+mdpress-plugin-serve@^1.0.0-rc.7:
+  version "1.0.0-rc.7"
+  resolved "https://r.cnpmjs.org/mdpress-plugin-serve/download/mdpress-plugin-serve-1.0.0-rc.7.tgz#29a52fa436e0f4ad697ee2bb9a7c9209c076c3e3"
+  integrity sha1-KaUvpDbg9K1pfuK7mnySCcB2w+M=
+  dependencies:
+    chalk "^2.4.2"
+    express "^4.16.4"
+    opn "^5.4.0"
+
+mdpress-plugin-smooth-scroll@^1.0.0-rc.7:
+  version "1.0.0-rc.7"
+  resolved "https://r.cnpmjs.org/mdpress-plugin-smooth-scroll/download/mdpress-plugin-smooth-scroll-1.0.0-rc.7.tgz#1f6a4091210d8b2d5d80a2dc2e0f7e5836140b28"
+  integrity sha1-H2pAkSENiy1dgKLcLg9+WDYUCyg=
+  dependencies:
+    smoothscroll-polyfill "^0.4.4"
+
 mdurl@^1.0.1:
   version "1.0.1"
   resolved "http://r.cnpmjs.org/mdurl/download/mdurl-1.0.1.tgz#fe85b2ec75a59037f2adfec100fd6c601761152e"
@@ -11123,7 +11158,7 @@ opencollective-postinstall@^2.0.2:
   resolved "http://r.cnpmjs.org/opencollective-postinstall/download/opencollective-postinstall-2.0.2.tgz#5657f1bede69b6e33a45939b061eb53d3c6c3a89"
   integrity sha1-Vlfxvt5ptuM6RZObBh61PTxsOok=
 
-opn@^5.5.0:
+opn@^5.4.0, opn@^5.5.0:
   version "5.5.0"
   resolved "http://r.cnpmjs.org/opn/download/opn-5.5.0.tgz#fc7164fab56d235904c51c3b27da6758ca3b9bfc"
   integrity sha1-/HFk+rVtI1kExRw7J9pnWMo7m/w=
@@ -12330,6 +12365,13 @@ range-parser@^1.2.1, range-parser@~1.2.1:
   version "1.2.1"
   resolved "http://r.cnpmjs.org/range-parser/download/range-parser-1.2.1.tgz#3cf37023d199e1c24d1a55b84800c2f3e6468031"
   integrity sha1-PPNwI9GZ4cJNGlW4SADC8+ZGgDE=
+
+raphael@2.3.0:
+  version "2.3.0"
+  resolved "https://r.cnpmjs.org/raphael/download/raphael-2.3.0.tgz#eabeb09dba861a1d4cee077eaafb8c53f3131f89"
+  integrity sha1-6r6wnbqGGh1M7gd+qvuMU/MTH4k=
+  dependencies:
+    eve-raphael "0.5.0"
 
 raw-body@2.4.0:
   version "2.4.0"
@@ -14270,6 +14312,11 @@ smart-buffer@^4.1.0:
   version "4.1.0"
   resolved "http://r.cnpmjs.org/smart-buffer/download/smart-buffer-4.1.0.tgz#91605c25d91652f4661ea69ccf45f1b331ca21ba"
   integrity sha1-kWBcJdkWUvRmHqacz0XxszHKIbo=
+
+smoothscroll-polyfill@^0.4.4:
+  version "0.4.4"
+  resolved "https://r.cnpmjs.org/smoothscroll-polyfill/download/smoothscroll-polyfill-0.4.4.tgz#3a259131dc6930e6ca80003e1cb03b603b69abf8"
+  integrity sha1-OiWRMdxpMObKgAA+HLA7YDtpq/g=
 
 snapdragon-node@^2.0.1:
   version "2.1.1"

@@ -21,6 +21,7 @@
     "register-mdpress": "lerna exec --scope mdpress -- yarn link",
     "release": "yarn lint && yarn build && yarn test && node scripts/release.js",
     "remote-version": "node scripts/remote-version.js",
+    "serve:docs": "yarn workspace docs serve",
     "show-help": "yarn workspace docs show-help",
     "test": "node scripts/test.js",
     "tsc": "yarn workspace @mdpress/shared-utils tsc",

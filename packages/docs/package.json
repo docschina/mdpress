@@ -26,6 +26,7 @@
     "lint-md": "yarn lint-md:style && yarn lint-md:wording",
     "lint-md:style": "remark --quiet --frail .",
     "lint-md:wording": "textlint ./docs/**/*.md",
+    "serve": "mdpress serve docs --temp .temp",
     "show-help": "mdpress --help",
     "view-info": "mdpress view-info docs --temp .temp"
   },
@@ -36,6 +37,9 @@
     "@mdpress/plugin-pwa": "1.0.0-rc.15",
     "@textlint-rule/textlint-rule-no-unmatched-pair": "^1.0.7",
     "mdpress": "1.0.0-rc.15",
+    "mdpress-plugin-flowchart": "^1.0.0-rc.2",
+    "mdpress-plugin-serve": "^1.0.0-rc.7",
+    "mdpress-plugin-smooth-scroll": "^1.0.0-rc.7",
     "node-sass": "^4.14.1",
     "remark-cli": "^7.0.0",
     "remark-lint": "^6.0.5",
