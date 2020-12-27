@@ -14,7 +14,7 @@ export default function Loading(props) {
     if (props.isLoading && !loadedMap[pathname] && !isServer) {
       // Todo: only page
       nprogress.start();
-      return <div>isLoading</div>;
+      return <div></div>;
     }
   } catch (e) {
     return null;
@@ -25,7 +25,7 @@ export default function Loading(props) {
   } else if (props.timedOut) {
     return <div>Taking a long time... <button onClick={ props.retry }>Retry</button></div>;
   } else if (props.pastDelay) {
-    return <div>Loading...</div>;
+    return <div></div>;
   } else {
     return null;
   }

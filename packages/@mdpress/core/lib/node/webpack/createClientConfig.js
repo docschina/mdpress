@@ -30,6 +30,41 @@ module.exports = function createClientConfig (ctx) {
       child_process: 'empty'
     });
 
+  config.optimization.splitChunks({
+    maxInitialRequests: 10, // This one!
+    cacheGroups: {
+      react: {
+        test: /[\\/]node_modules[\\/](react|react-dom|react-router|react-router-dom)[\\/]/,
+        name: 'react-lib',
+        priority: 90,
+        chunks: 'all'
+      },
+      babel: {
+        test: (module) => {
+          return (
+            module.resource &&
+            module.resource.match('node_modules/babel-standalone')
+          );
+        },
+        name: 'babel-standalone',
+        priority: 100,
+        chunks: 'all'
+      },
+      vendor: {
+        chunks: 'all',
+        test: (module) => {
+          return (
+            module.resource &&
+                        /\.js$/.test(module.resource) &&
+                        module.resource.match('node_modules') &&
+                        !module.resource.match('node_modules/babel-standalone')
+          );
+        },
+        name: 'vendor'
+      }
+    }
+  });
+
   // generate client manifest only during build
   if (process.env.NODE_ENV === 'production') {
     // TODO Switch back to original after problems are resolved.
