@@ -3,6 +3,7 @@ on:
   push:
     branches:
       - 1.x
+      - master
 jobs:
   build:
     name: Build
