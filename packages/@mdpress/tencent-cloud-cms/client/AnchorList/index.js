@@ -29,6 +29,18 @@ export default function AnchorList(props) {
     }
   }, [str]);
 
+  useEffect(() => {
+    const el = document.querySelector(container);
+
+    if (list.length && el) {
+      el.classList.add('show-anchor');
+    } else {
+      el.classList.remove('show-anchor');
+    }
+  },[list]);
+
+  if (!list.length) return null;
+
   return <div className={'anchor'}><Anchor
     hash={true}
     affix={true}
