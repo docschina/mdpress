@@ -74,7 +74,7 @@ lang = "en-US"
 - 类型: `string`
 - 默认值: `siteConfig.permalink`
 
-参考: [Permalinks](./permalinks.md).
+参考: [永久链接](./permalinks.md)。
 
 ### metaTitle
 
