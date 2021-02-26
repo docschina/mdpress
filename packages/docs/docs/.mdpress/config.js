@@ -7,12 +7,12 @@ module.exports = () => ({
     '/': {
       lang: 'en-US',
       title: 'MdPress',
-      description: 'Markdown-powered Static Site Generator'
+      description: 'Markdown-powered Site Generator'
     },
     '/zh/': {
       lang: 'zh-CN',
       title: 'MdPress',
-      description: 'Markdown 驱动的静态网站生成器'
+      description: 'Markdown 驱动的网站生成器'
     }
   },
   head: [
