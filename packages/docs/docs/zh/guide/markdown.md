@@ -1,8 +1,8 @@
 # Markdown 拓展
 
-## Header Anchors
+## 标题锚点
 
-所有的标题将会自动地应用 anchor 链接，anchor 的渲染可以通过 enhanceApp 中 `mdConfig.anchor` 来配置。
+所有的标题将会自动地应用锚点链接，锚点的渲染规则可以通过 enhanceApp 中 `mdConfig.anchor` 来配置。
 
 ## 链接
 
