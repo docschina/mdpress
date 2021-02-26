@@ -1,12 +1,14 @@
 # 介绍
 
-MdPress 由两部分组成：第一部分是一个[极简静态网站生成器](https://github.com/docschina/mdpress/tree/master/packages/%40mdpress/core)，它包含由 MdPress 驱动的[主题系统](../theme/README.md)和[插件 API](../plugin/README.md)，另一个部分是为书写技术文档而优化的[默认主题](../theme/default-theme-config.md)，它的诞生初衷是为了支持印记中文及其子项目的文档站需求。
+MdPress 由两部分组成：第一部分是一个[极简网站生成器](https://github.com/docschina/mdpress/tree/master/packages/%40mdpress/core)，它包含由 MdPress 驱动的[主题系统](../theme/README.md)和[插件 API](../plugin/README.md)，另一个部分是为书写技术文档而优化的[默认主题](../theme/default-theme-config.md)，它的诞生初衷是为了支持印记中文及其子项目的文档站需求。
 
-每一个由 MdPress 生成的页面都带有预渲染好的 HTML，也因此具有非常好的加载性能和搜索引擎优化（SEO）。同时，一旦页面被加载，React 将接管这些静态内容，并将其转换成一个完整的单页应用（SPA），其他的页面则会只在用户浏览到的时候才按需加载。
+每一个由 MdPress 生成的页面都带有预渲染好的 HTML，也因此具有较好的加载性能和搜索引擎优化（SEO）。同时，一旦页面被加载，React 将接管这些静态内容，并将其转换成一个完整的单页应用（SPA），其他的页面则会只在用户浏览到的时候才按需加载。
+
+如果你的页面数据存储在服务端，也可以通过编写特定的插件来渲染它们。
 
 ## 它是如何工作的？
 
-事实上，一个 MdPress 网站是一个由 [React](https://reactjs.org/)、[React Router](https://reacttraining.com/react-router/) 和 [webpack](http://webpack.js.org/) 驱动的单页应用。如果你以前使用过 React 的话，当你在开发一个自定义主题的时候，你会感受到非常熟悉的开发体验，你甚至可以使用 React DevTools 去调试你的自定义主题。
+事实上，一个 MdPress 网站是一个由 [React](https://reactjs.org/)、[React Router](https://reacttraining.com/react-router/) 和 [Webpack](http://webpack.js.org/) 驱动的单页应用。如果你以前使用过 React 的话，当你在开发一个自定义主题的时候，你会感受到非常熟悉的开发体验，你甚至可以使用 React DevTools 去调试你的自定义主题。
 
 在构建时，我们会为应用创建一个服务端渲染（SSR）的版本，然后通过虚拟访问每一条路径来渲染对应的 HTML。这种做法的灵感来源于 [Nuxt](https://nuxtjs.org/) 的 `nuxt generate` 命令，以及其他的一些项目，比如 [Gatsby](https://www.gatsbyjs.org/) 和 Vuepress。
 
@@ -36,15 +38,15 @@ MdPress 由两部分组成：第一部分是一个[极简静态网站生成器](
 * [首页](../theme/default-theme-config.md#首页)
 * [内置的搜索](../theme/default-theme-config.md#内置搜索)
 * [Algolia 搜索](../theme/default-theme-config.md#algolia-搜索)
-* 可定制的 [navbar](../theme/default-theme-config.md#navbar) and [sidebar](../theme/default-theme-config.md#sidebar)
+* 可定制的[顶部导航](../theme/default-theme-config.md#navbar)和[侧边栏](../theme/default-theme-config.md#sidebar)
 * [自动生成的 GitHub 链接和页面编辑链接](../theme/default-theme-config.md#Git-仓库和编辑链接)
 * [PWA: 刷新内容的 Popup](../theme/default-theme-config.md#popup-ui-to-refresh-contents)
 * [最后更新时间](../theme/default-theme-config.md#最后更新时间)
 * [多语言支持](../guide/i18n.md)
 
-**Plugin**
+**插件**
 
-* [强大的 Plugin API](../plugin/README.md)
+* [强大的插件 API](../plugin/README.md)
 * [PWA 插件](../plugin/official/plugin-pwa.md)
 * [Google Analytics 插件](../plugin/official/plugin-google-analytics.md)
 * ...
@@ -52,11 +54,11 @@ MdPress 由两部分组成：第一部分是一个[极简静态网站生成器](
 ## 为什么不是...?
 
 ### Vuepress
-Vuepress 的设计很棒，本项目借鉴了它的设计和代码，但它只支持在 Markdown 中使用 Vue 组件。并且它只支持静态 Markdown 文件的编译，而不支持从服务端获取 Markdown 数据的编译。
+Vuepress 的设计很棒，本项目借鉴了它的设计和代码，但它仅能渲染存储在本地文件系统中的 Markdown，而不支持渲染存储在服务端的 Markdown。
 
 ### Nuxt
 
-MdPress 能做的事情，Nuxt 理论上确实能够胜任，但 Nuxt 是为构建应用程序而生的，而 MdPress 则专注在以内容为中心的静态网站上，同时提供了一些为技术文档定制的开箱即用的特性。
+MdPress 能做的事情，Nuxt 理论上确实能够胜任，但 Nuxt 是为构建应用程序而生的，而 MdPress 则专注在以内容为中心的网站上，同时提供了一些为技术文档定制的开箱即用的特性。
 
 ### Docsify / Docute
 
@@ -68,4 +70,4 @@ Hexo 最大的问题在于他的主题系统太过于静态以及过度地依赖
 
 ### GitBook
 
-我们的子项目文档一直都在使用 GitBook。GitBook 最大的问题在于当文件很多时，每次编辑后的重新加载时间长得令人无法忍受。它的默认主题导航结构也比较有限制性，并且，主题系统也不是 React 驱动的。GitBook 背后的团队如今也更专注于将其打造为一个商业产品而不是开源工具。
+GitBook 最大的问题在于当文件很多时，每次编辑后的重新加载时间长得令人无法忍受。它的默认主题导航结构也比较有限制性，并且，主题系统也不是 React 驱动的。GitBook 背后的团队如今也更专注于将其打造为一个商业产品而不是开源工具。
