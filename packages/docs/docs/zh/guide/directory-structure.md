@@ -31,18 +31,18 @@ MdPress 遵循 **“约定优于配置”** 的原则，推荐的目录结构如
 请留意目录名的大写。
 :::
 
-- `docs/.mdpres`: 用于存放全局的配置、组件、静态资源等。
-- `docs/.mdpres/components`: 该目录中的 React 组件将会被自动注册为全局组件。
-- `docs/.mdpres/theme`: 用于存放本地主题。
-- `docs/.mdpres/styles`: 用于存放样式相关的文件。
-- `docs/.mdpres/styles/index.styl`: 将会被自动应用的全局样式文件，会生成在最终的 CSS 文件结尾，具有比默认样式更高的优先级。
-- `docs/.mdpres/styles/palette.styl`: 用于重写默认颜色常量，或者设置新的 stylus 颜色常量。
-- `docs/.mdpres/public`: 静态资源目录。
-- `docs/.mdpres/templates`: 存储 HTML 模板文件。
-- `docs/.mdpres/templates/dev.html`: 用于开发环境的 HTML 模板文件。
-- `docs/.mdpres/templates/ssr.html`: 构建时基于 React SSR 的 HTML 模板文件。
-- `docs/.mdpres/config.js`: 配置文件的入口文件，也可以是 `YML` 或 `toml`。
-- `docs/.mdpres/enhanceApp.js`: 客户端应用的增强。
+- `docs/.mdpress`: 用于存放全局的配置、组件、静态资源等。
+- `docs/.mdpress/components`: 该目录中的 React 组件将会被自动注册为全局组件。
+- `docs/.mdpress/theme`: 用于存放本地主题。
+- `docs/.mdpress/styles`: 用于存放样式相关的文件。
+- `docs/.mdpress/styles/index.styl`: 将会被自动应用的全局样式文件，会生成在最终的 CSS 文件结尾，具有比默认样式更高的优先级。
+- `docs/.mdpress/styles/palette.styl`: 用于重写默认颜色常量，或者设置新的 stylus 颜色常量。
+- `docs/.mdpress/public`: 静态资源目录。
+- `docs/.mdpress/templates`: 存储 HTML 模板文件。
+- `docs/.mdpress/templates/dev.html`: 用于开发环境的 HTML 模板文件。
+- `docs/.mdpress/templates/ssr.html`: 构建时基于 React SSR 的 HTML 模板文件。
+- `docs/.mdpress/config.js`: 配置文件的入口文件，也可以是 `YML` 或 `toml`。
+- `docs/.mdpress/enhanceApp.js`: 客户端应用的增强。
 
 ::: warning 注意
 当你想要去自定义 `templates/ssr.html` 或 `templates/dev.html` 时，最好基于 [默认的模板文件](https://github.com/docschina/mdpress/blob/master/packages/%40mdpress/core/lib/client/index.dev.html) 来修改，否则可能会导致构建出错。
