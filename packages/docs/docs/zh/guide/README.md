@@ -24,7 +24,6 @@ MdPress 由两部分组成：第一部分是一个[极简网站生成器](https:
 
 **在 Markdown 中 使用 React 组件**
 
-* [模板语法](../guide/using-react.md#模板语法)
 * [使用组件](../guide/using-react.md#使用组件)
 
 **React 驱动的自定义主题系统**
