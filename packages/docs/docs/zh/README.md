@@ -4,12 +4,12 @@ heroImage: /hero.png
 actionText: 快速上手 →
 actionLink: /zh/guide/
 features:
-- title: 简洁至上
-  details: 以 Markdown 为中心的项目结构，以最少的配置帮助你专注于写作。
 - title: Markdown 驱动
+  details: 以 Markdown 为中心的项目结构，以最少的配置帮助你专注于写作。
+- title: 内置 React
   details: 享受 Webpack 的开发体验，可以在 Markdown 中使用 React 组件，并支持使用 React 来开发自定义主题。
-- title: 高性能
-  details: MdPress 会为每个页面预渲染生成静态的 HTML，同时，每个页面被加载的时候，将作为 SPA 运行。
+- title: 多场景
+  details: MdPress 既可以将每个页面预渲染生成静态的 HTML，也支持渲染动态的数据。
 footer: MIT Licensed | Copyright © 2020-present docschina
 ---
 
