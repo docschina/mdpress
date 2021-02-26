@@ -1,6 +1,6 @@
 # 全局计算属性
 
-在 MdPress 中，内置了一些核心的[计算属性](../guide/global-computed.md)，以供[默认主题](../theme/default-theme-config.md) 或自定义主题使用。
+在 MdPress 中，内置了一些核心的[计算属性](../guide/global-computed.md)，以供[默认主题](../theme/default-theme-config.md)或自定义主题使用。
 
 ## $site
 
