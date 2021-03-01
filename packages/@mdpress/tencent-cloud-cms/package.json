@@ -20,6 +20,7 @@
   "author": "docschina",
   "main": "index.js",
   "dependencies": {
+    "@cloudbase/database": "^1.2.2",
     "@cloudbase/js-sdk": "1.3.3",
     "@mdpress/plugin-back-to-top": "1.0.0-rc.15",
     "antd": "^4.8.0",
