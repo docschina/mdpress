@@ -9,7 +9,7 @@ This is the `$site` value of the site you see now:
 ``` json
 {
   "title": "MdPress",
-  "description": "Markdown-powered static site generator",
+  "description": "Markdown-powered site generator",
   "base": "/",
   "pages": [
     {

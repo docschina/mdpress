@@ -71,3 +71,6 @@ yarn docs:build # 或者：npm run docs:build
 ```
 
 默认情况下，文件将会被生成在 `.mdpress/dist`，当然，你也可以通过 `.mdpress/config.js` 中的 `dest` 字段来修改，生成的文件可以部署到任意的静态文件服务器上，参考 [部署](./deploy.md) 来了解更多。
+
+## 动态数据源
+参考：渲染来自腾讯云 CMS 上的数据。

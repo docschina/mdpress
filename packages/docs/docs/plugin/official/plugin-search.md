@@ -3,7 +3,7 @@ title: search
 metaTitle: Search Plugin | MdPress
 ---
 
-# [@mdpress/plugin-search](https://github.com/docschina/mdpress/tree/master/packages/%40vuepress/plugin-search)
+# [@mdpress/plugin-search](https://github.com/docschina/mdpress/tree/master/packages/%40mdpress/plugin-search)
 
 > [Headers](../../miscellaneous/glossary.md#headers)-based search plugin
 

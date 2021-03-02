@@ -29,9 +29,7 @@ class Comp extends React.Component {
 }
 ```
 
-## Templating
-
-### Access to Site & Page Data
+## Access to Site & Page Data
 
 The compiled component does not have any private data but does have access to the [site metadata](../theme/writing-a-theme.md#site-and-page-metadata). For example:
 
@@ -109,7 +107,7 @@ MdPress has built-in webpack config for the following pre-processors: `sass`, `s
 yarn add -D sass-loader node-sass
 ```
 
-Now you can use style code in Markdown and theme components.
+Now you can use style code in theme components.
 
 Using pug requires installing `pug` and `pug-plain-loader`:
 
@@ -126,7 +124,7 @@ For pre-processors that do not have built-in webpack config support, you will ne
 <!--
 ## Script & Style Hoisting
 
-Sometimes you may need to apply some JavaScript or CSS only to the current page. In those cases, you can directly write root-level `<script>` or `<style>` blocks in the Markdown file, and they will be hoisted out of the compiled HTML and used as the `<script>` and `<style>` blocks for the resulting Vue single-file component.
+Sometimes you may need to apply some JavaScript or CSS only to the current page. In those cases, you can directly write root-level `<script>` or `<style>` blocks in the Markdown file, and they will be hoisted out of the compiled HTML and used as the `<script>` and `<style>` blocks for the resulting React single-file component.
 
 <p class="demo" :class="$style.example"></p>
 
