@@ -3,7 +3,7 @@ title: active-header-links
 metaTitle: A plugin of automatically activating sidebar links when page scrolls | MdPress
 ---
 
-# [@mdpress/plugin-active-header-links](https://github.com/docschina/mdpress/tree/master/packages/%40vuepress/plugin-active-header-links)
+# [@mdpress/plugin-active-header-links](https://github.com/docschina/mdpress/tree/master/packages/%40mdpress/plugin-active-header-links)
 
 > A plugin of automatically activating sidebar links when page scrolls
 

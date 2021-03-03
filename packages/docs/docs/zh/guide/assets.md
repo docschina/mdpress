@@ -1,39 +1,8 @@
 # 静态资源
 
-## 相对路径
-
-所有的 Markdown 文件都会被 webpack 编译成 React 组件，因此你可以，并且**应该更倾向于**使用相对路径（Relative URLs）来引用所有的静态资源：
-
-``` md
-![An image](./image.png)
-```
-
-同样地，这在 `*.js` 文件的模板中一样可以工作，图片将会被 `url-loader` 和 `file-loader` 处理，在运行生成静态文件的构建任务时，文件会被复制到正确的位置。
-
-除此之外，你也使用 `~` 前缀来明确地指出这是一个 webpack 的模块请求，这将允许你通过 webpack 别名来引用文件或者 npm 的依赖：
-
-``` md
-![Image from alias](~@alias/image.png)
-![Image from dependency](~some-dependency/image.png)
-```
-
-Webpack 的别名可以通过 `.mdpress/config.js` 中 [configureWebpack](../config/README.md#configurewebpack) 来配置，如：
-
-``` js
-module.exports = {
-  configureWebpack: {
-    resolve: {
-      alias: {
-        '@alias': 'path/to/some/dir'
-      }
-    }
-  }
-}
-```
-
 ## 公共文件
 
-有时，你可能需要提供一个静态资源，但是它们并不直接被你的任何一个 markdown 文件或者主题组件引用 —— 举例来说，favicons 和 PWA 的图标，在这种情形下，你可以将它们放在 `.mdpress/public` 中， 它们最终会被复制到生成的静态文件夹中。
+所有的静态资源，你都需要将它们放在 `.mdpress/public` 中，无论是直接被你的任何一个 markdown 文件或者主题组件引用的图片，还是 favicons 和 PWA 的图标。它们最终会被复制到生成的静态文件夹中。
 
 ## 基础路径
 

@@ -32,9 +32,7 @@ class Comp extends React.Component {
 }
 ```
 
-## 模板语法
-
-### 访问网站以及页面的数据
+## 访问网站以及页面的数据
 
 编译后的组件没有私有数据，但可以访问 [网站的元数据](../theme/writing-a-theme.md#网站和页面的元数据)，举例来说：
 
@@ -111,7 +109,7 @@ MdPress 对以下预处理器已经内置相关的 webpack 配置：`sass`、`sc
 yarn add -D sass-loader node-sass
 ```
  
-然后你就可以在 Markdown 或是组件中使用相应的样式文件。
+然后你就可以在组件中使用相应的样式文件。
 
 要在组件中使用 pug，则需要安装 `pug` 和 `pug-plain-loader`:
 
@@ -166,7 +164,7 @@ export default {
   - `pageKey` - string, 要渲染的 [page](./global-computed.md#page) 的 hash key, 默认值是当前页面的 key.
   - `slotKey` - string, 页面的 [markdown slot](./markdown-slot.md) 的 key. 默认值是 [default slot](./markdown-slot.md#default-slot-content).
 
-- **Usage**：
+- **用法**：
 
 指定一个指定页面的特定 slot 用于渲染，当你使用 [自定义布局](../theme/default-theme-config.md#特定页面的自定义布局) 或者自定义主题时，这将非常有用。
 
@@ -190,7 +188,7 @@ export default {
   - `type` - string, 可选值： `"tip"|"warning"|"error"`，默认值是： `"tip"`
   - `vertical` - string, 可选值： `"top"|"middle"`，默认值是： `"top"`
 
-- **Usage**:
+- **用法**:
 
 你可以在标题中，使用这个组件来为某些 API 添加一些状态：
 

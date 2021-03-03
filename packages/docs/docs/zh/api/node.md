@@ -27,7 +27,7 @@ const { createApp, dev, build, eject } = require('mdpress')
 
 ### dev(\[options]): Promise\<App>
 
-启动一个 Dev Server，实际上它是由 `createapp` 实现的：
+启动一个 Dev Server，实际上它是由 `createApp` 实现的：
 
 ```js
 async function dev (options) {
@@ -39,7 +39,7 @@ async function dev (options) {
 
 ### build(\[options]): Promise\<App>
 
-将源文件构建为静态站点, 实际上它是由 `createapp` 实现的：
+将源文件构建为静态站点, 实际上它是由 `createApp` 实现的：
 
 ```js
 async function build (options) {

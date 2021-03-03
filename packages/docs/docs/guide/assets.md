@@ -1,39 +1,8 @@
 # Asset Handling
 
-## Relative URLs
-
-All Markdown files are compiled into React components and processed by webpack, so you can and **should prefer** referencing any asset using relative URLs:
-
-``` md
-![An image](./image.png)
-```
-
-This would work the same way as in `*.js` file templates. The image will be processed with `url-loader` and `file-loader`, and copied to appropriate locations in the generated static build.
-
-Also, you can use the `~` prefix to explicitly specify this is a webpack module request, allowing you to reference files with webpack aliases or from npm dependencies:
-
-``` md
-![Image from alias](~@alias/image.png)
-![Image from dependency](~some-dependency/image.png)
-```
-
-Webpack aliases can be configured via [configureWebpack](../config/README.md#configurewebpack) in `.mdpress/config.js`. Example:
-
-``` js
-module.exports = {
-  configureWebpack: {
-    resolve: {
-      alias: {
-        '@alias': 'path/to/some/dir'
-      }
-    }
-  }
-}
-```
-
 ## Public Files
 
-Sometimes you may need to provide static assets that are not directly referenced in any of your Markdown or theme components - for example, favicons and PWA icons. In such cases, you can put them inside `.mdpress/public` and they will be copied to the root of the generated directory.
+For all static resources,you need to put them in '.mdpress/public'.Whether it's a image directly referenced by any of your Markdown files or theme components,or favicons and PWA icons.They are eventually copied to the resulting static folder.
 
 ## Base URL
 

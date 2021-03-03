@@ -129,7 +129,7 @@ module.exports = {
 ``` json
 {
   "title": "MdPress",
-  "description": "Markdown 驱动的静态网站生成器",
+  "description": "Markdown 驱动的网站生成器",
   "base": "/",
   "pages": [
     {

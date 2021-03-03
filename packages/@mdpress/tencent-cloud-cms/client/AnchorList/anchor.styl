@@ -1,29 +1,23 @@
-.anchor {
-  position: fixed;
-  top: 5.2rem;
-  right: 55px;
-  color: #666;
-  background-color: #fff;
-  max-width 'calc((%s - %s - %s) / 2)' % (100vw 27rem $contentWidth)
-}
+.anchor
+  position fixed
+  top 5.2rem
+  right 55px
+  color #666
+  background-color #fff
+  width 146px
 
-@media (max-width: 960px) {
-  .anchor {
-    display: none;
-  }
-}
+.show-anchor.theme-default-content:not(.custom)
+  margin-left "calc((100% - %s - 5rem - 146px) / 2)" % ($contentWidth)
 
-@media (max-width: 1280px) and (min-width: 960px){
-  .ant-anchor {
-    font-size: 12px;
-  }
+@media (max-width 1440px)
+  .anchor
+    width 110px
+  .show-anchor.theme-default-content:not(.custom)
+    margin-left "calc((100% - %s - 5rem - 110px) / 2)" % ($contentWidth)
 
-  .theme-default-content:not(.custom).content {
-    max-width: 600px;
-    padding-right: 10rem;
-  }
+@media (max-width 1279px)
+  .anchor
+    display none
+  .show-anchor.theme-default-content:not(.custom)
+    margin-left auto
 
-  .anchor {
-    max-width 'calc((%s - %s - %s) / 2)' % (100vw 27rem 600px)
-  }
-}

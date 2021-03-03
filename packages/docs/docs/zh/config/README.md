@@ -18,7 +18,7 @@ sidebar: auto
 
 **参考:**
 
-- [Base URL](../guide/assets.md#基础路径)
+- [基础路径](../guide/assets.md#基础路径)
 - [部署指南 > GitHub Pages](../guide/deploy.md#github-pages)
 
 ### title
@@ -214,7 +214,7 @@ MdPress 提供了一种添加额外样式的简便方法。你可以创建一个
 - 类型: `Object|Array`
 - 默认值: `undefined`
 
-请参考 [plugin > Using a plugin](../plugin/using-a-plugin.md) 来使用一个插件。
+请参考 [插件 > 使用插件](../plugin/using-a-plugin.md) 来使用一个插件。
 
 ## Markdown
 

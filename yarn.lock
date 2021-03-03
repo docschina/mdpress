@@ -938,6 +938,16 @@
     lodash.set "4.3.2"
     lodash.unset "4.5.2"
 
+"@cloudbase/database@^1.2.2":
+  version "1.2.2"
+  resolved "https://r.cnpmjs.org/@cloudbase/database/download/@cloudbase/database-1.2.2.tgz#24cc9310967c27bc1bb8fa24535f490289c8440a"
+  integrity sha1-JMyTEJZ8J7wbuPokU19JAonIRAo=
+  dependencies:
+    bson "^4.0.3"
+    lodash.clonedeep "4.5.0"
+    lodash.set "4.3.2"
+    lodash.unset "4.5.2"
+
 "@cloudbase/functions@^1.2.2":
   version "1.2.2"
   resolved "https://r.cnpmjs.org/@cloudbase/functions/download/@cloudbase/functions-1.2.2.tgz#826c16c64b78e30169ca61abfc6894283772843f"
@@ -4464,6 +4474,13 @@ bson@^4.0.2:
   version "4.2.0"
   resolved "https://r.cnpmjs.org/bson/download/bson-4.2.0.tgz#15b5beffed6e44883de9922a2e1896fba4042cd4"
   integrity sha1-FbW+/+1uRIg96ZIqLhiW+6QELNQ=
+  dependencies:
+    buffer "^5.6.0"
+
+bson@^4.0.3:
+  version "4.2.2"
+  resolved "https://r.cnpmjs.org/bson/download/bson-4.2.2.tgz#ac01bb32b8ab30839550b98e0f44fced931df75d"
+  integrity sha1-rAG7MrirMIOVULmOD0T87ZMd910=
   dependencies:
     buffer "^5.6.0"
 
