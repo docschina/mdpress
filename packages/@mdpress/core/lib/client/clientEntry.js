@@ -10,14 +10,17 @@ window.__MDPRESS__ = {
   hash: LAST_COMMIT_HASH
 };
 
-createApp(false /* isServer */).then(({ app,routerBase }) => {
-  function Client() {
-    return  <BrowserRouter basename={routerBase}>
-      {app}
-    </BrowserRouter>;
-  }
+if (!window.MDPRESS_INIT) {
+  createApp(false /* isServer */).then(({ app,routerBase }) => {
+    function Client() {
+      return  <BrowserRouter basename={routerBase}>
+        {app}
+      </BrowserRouter>;
+    }
 
-  render((
-    <Client/>
-  ), document.getElementById('root'));
-});
+    window.MDPRESS_INIT = true;
+    render((
+      <Client/>
+    ), document.getElementById('root'));
+  });
+}
