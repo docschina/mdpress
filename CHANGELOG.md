@@ -1,3 +1,12 @@
+# [1.0.0-rc.16](https://github.com/docschina/mdpress/compare/v1.0.0-rc.15...v1.0.0-rc.16) (2021-03-11)
+
+
+### Bug Fixes
+
+* react-dom render multi times ([4ce5708](https://github.com/docschina/mdpress/commit/4ce57085b8bd2372718ebf3f5f6aa5153ee3fb2c))
+
+
+
 # [1.0.0-rc.15](https://github.com/docschina/mdpress/compare/v1.0.0-rc.14...v1.0.0-rc.15) (2020-12-18)
 
 
