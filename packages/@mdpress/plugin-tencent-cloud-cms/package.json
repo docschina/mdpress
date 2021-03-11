@@ -1,6 +1,6 @@
 {
-  "name": "@mdpress/tencent-cloud-cms",
-  "version": "1.0.0-rc.15.5",
+  "name": "@mdpress/plugin-tencent-cloud-cms",
+  "version": "1.0.0-rc.15.7",
   "description": "tencent-cloud-cms for mdpress",
   "keywords": [
     "documentation",
