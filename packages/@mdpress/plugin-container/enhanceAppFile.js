@@ -30,7 +30,6 @@ function enhanceMarkdown(md,option) {
     console.warn('[mdpress-plugin-container]', '\'type\' option is required');
     return;
   }
-
   if (!render) {
     // ===============================
     // resolve render place functions
@@ -107,6 +106,11 @@ export default ({ mdConfig }) => {
     if (!init){
       options.forEach(option => {
         try {
+          const { functionKeys = [] } = option;
+          functionKeys.forEach(key => {
+            option[key] = eval(option[key]);
+          });
+
           enhanceMarkdown(md,option);
         } catch (e) {
           console.error('[mdpress-plugin-container] error:',e);

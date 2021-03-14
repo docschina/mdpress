@@ -165,7 +165,11 @@ module.exports = class App {
       .use(require('./internal-plugins/dataBlock'))
       .use(require('./internal-plugins/markdown'))
       .use('@mdpress/container', {
-        paths: [path.resolve(__dirname,'../client/markdown/slot.js')]
+        containers: [{
+          type: 'slot',
+          before: info => `<div class="markdown-slot" id="${info}">`,
+          after: '</div>'
+        }]
       })
       .use('@mdpress/last-updated', !!shouldUseLastUpdated);
   }

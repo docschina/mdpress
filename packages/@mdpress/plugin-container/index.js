@@ -7,9 +7,25 @@ const {
 let moduleId = 0;
 let manifest = [];
 const ContainerPlugin = (options = {},ctx) => {
-  if (Array.isArray(options.paths)){
-    options.paths.forEach(async item => {
-      const content = fs.readFileSync(item);
+  fs.emptyDirSync(path.resolve(ctx.tempPath, 'markdown-container'));
+
+  if (Array.isArray(options.containers)) {
+    let functionKeys = [];
+
+    const replacer = (key, value) => {
+      if (typeof value === 'function') {
+        functionKeys.push(key);
+        return value.toString();
+      }
+      return value;
+    };
+
+    options.containers.forEach(async item => {
+      let content = `export default ${JSON.stringify({
+        ...item,
+        functionKeys
+      }, replacer,2)}`;
+
       const destPath = await ctx.writeTemp(
         `markdown-container/${moduleId++}.js`,
         hasDefaultExport

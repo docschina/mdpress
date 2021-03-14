@@ -28,12 +28,29 @@ module.exports = (options, ctx) => {
       '@mdpress/search',
       '@mdpress/plugin-nprogress',
       ['@mdpress/container', {
-        paths: [
-          path.resolve(__dirname,'markdown/tip-container.js'),
-          path.resolve(__dirname,'markdown/warning-container.js'),
-          path.resolve(__dirname,'markdown/danger-container.js'),
-          path.resolve(__dirname,'markdown/details-container.js')
-        ]
+        containers: [{
+          type: 'danger',
+          defaultTitle: {
+            '/': 'WARNING',
+            '/zh/': '警告'
+          }
+        },{
+          type: 'tip',
+          defaultTitle: {
+            '/': 'TIP',
+            '/zh/': '提示'
+          }
+        },{
+          type: 'warning',
+          defaultTitle: {
+            '/': 'WARNING',
+            '/zh/': '注意'
+          }
+        },{
+          type: 'details',
+          before: info => `<details class="custom-block details">${info ? `<summary>${info}</summary>` : ''}\n`,
+          after: () => '</details>\n'
+        }]
       }],
       ['smooth-scroll', enableSmoothScroll]
     ]
