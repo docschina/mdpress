@@ -10,7 +10,16 @@ export function compileWithWebpack (file, extraConfig, cb) {
       rules: [
         {
           test: /\.js$/,
-          loader: 'babel-loader'
+          loader: 'babel-loader',
+          options: {
+            'plugins': [
+              require.resolve('babel-plugin-syntax-dynamic-import'),
+            ],
+            'presets': [
+              require.resolve('babel-preset-es2015')
+            ],
+            'babelrc': false
+          }
         },
         {
           test: /async-.*\.js$/,
@@ -33,7 +42,11 @@ export function compileWithWebpack (file, extraConfig, cb) {
 
   compiler.run((err, stats) => {
     expect(err).toBeFalsy();
-    expect(stats.hasErrors()).toBeFalsy();
+    const errors = stats.hasErrors();
+    if (errors) {
+      console.log(stats.toString());
+    }
+    expect(errors).toBeFalsy();
     cb(fs);
   });
 }
