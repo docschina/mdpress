@@ -24,6 +24,7 @@ import sort from './sort';
 import toAbsolutePath from './toAbsolutePath';
 import tryChain from './tryChain';
 import unescapeHtml from './unescapeHtml';
+import { createBundleRenderer,createRenderer,ReactSSRClientPlugin,ReactSSRServerPlugin } from './react-server-render';
 
 import chalk from 'chalk';
 import fs from 'fs-extra';
@@ -66,5 +67,6 @@ export {
   globby,
   hash,
   escapeHtml,
-  semver
+  semver,
+  createBundleRenderer,createRenderer,ReactSSRClientPlugin,ReactSSRServerPlugin
 };

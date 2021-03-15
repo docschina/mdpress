@@ -67,6 +67,8 @@ module.exports = {
         'no-useless-constructor': 'off',
         'no-useless-escape': 'off',
         'no-empty': 'off',
+        '@typescript-eslint/no-this-alias': 'off',
+        '@typescript-eslint/camelcase': 'off'
       }
     },
     {

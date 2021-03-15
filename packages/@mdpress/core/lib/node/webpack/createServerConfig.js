@@ -6,9 +6,8 @@
 
 module.exports = function createServerConfig (ctx) {
   const fs = require('fs');
-  const { path, env } = require('@mdpress/shared-utils');
+  const { path, env,ReactSSRServerPlugin } = require('@mdpress/shared-utils');
   const createBaseConfig = require('./createBaseConfig');
-  const { ReactSSRServerPlugin } = require('./lib/webpack-plugin/server');
   const CopyPlugin = require('copy-webpack-plugin');
 
   const config = createBaseConfig(ctx, true /* isServer */);

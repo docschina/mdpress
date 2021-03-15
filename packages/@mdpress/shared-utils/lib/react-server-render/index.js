@@ -1,0 +1,12 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.createBundleRenderer = exports.ReactSSRServerPlugin = exports.ReactSSRClientPlugin = exports.createRenderer = void 0;
+const create_bundle_renderer_1 = require("./bundle-renderer/create-bundle-renderer");
+const create_renderer_1 = require("./create-renderer");
+Object.defineProperty(exports, "createRenderer", { enumerable: true, get: function () { return create_renderer_1.createRenderer; } });
+const client_1 = require("./webpack-plugin/client");
+Object.defineProperty(exports, "ReactSSRClientPlugin", { enumerable: true, get: function () { return client_1.ReactSSRClientPlugin; } });
+const server_1 = require("./webpack-plugin/server");
+Object.defineProperty(exports, "ReactSSRServerPlugin", { enumerable: true, get: function () { return server_1.ReactSSRServerPlugin; } });
+process.env.REACT_ENV = 'server';
+exports.createBundleRenderer = create_bundle_renderer_1.createBundleRendererCreator(create_renderer_1.createRenderer);
