@@ -72,7 +72,7 @@ module.exports = function createClientConfig (ctx) {
     // 1. Include CSS in preload files
     // 2. filter out useless styles.xxxxx.js chunk from mini-css-extract-plugin
     // https://github.com/webpack-contrib/mini-css-extract-plugin/issues/85
-    const { ReactSSRClientPlugin } = require('./lib/webpack-plugin/client');
+    const { ReactSSRClientPlugin } = require('@mdpress/shared-utils');
 
     config
       .plugin('ssr-client')

@@ -5,10 +5,10 @@ const webpack = require('webpack');
 const readline = require('readline');
 const escape = require('escape-html');
 
-const { chalk, fs, path, logger, env, performance } = require('@mdpress/shared-utils');
+const { chalk, fs, path, logger, env, performance,createBundleRenderer } = require('@mdpress/shared-utils');
+
 const createClientConfig = require('../webpack/createClientConfig');
 const createServerConfig = require('../webpack/createServerConfig');
-const { createBundleRenderer } = require('../webpack/lib/index');
 const { normalizeHeadTag, applyUserWebpackConfig } = require('../util/index');
 const { version } = require('../../../package');
 
