@@ -76,9 +76,17 @@ module.exports = () => ({
       ga: 'UA-128189152-1'
     }],
     ['@mdpress/container',{
-      paths: [
-        path.resolve(__dirname,'markdown/file-container.js'),
-        path.resolve(__dirname,'markdown/upgrade-container.js')
+      containers: [
+        {
+          type: 'file',
+          before: '<pre class="file-container"><code>',
+          after: '</code></pre>'
+        },
+        {
+          type: 'upgrade',
+          before: info => `<UpgradePath title="${info}">`,
+          after: '</UpgradePath>'
+        }
       ]
     } ],
     ['flowchart'],
