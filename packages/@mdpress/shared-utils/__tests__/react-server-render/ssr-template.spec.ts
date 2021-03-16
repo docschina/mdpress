@@ -24,6 +24,7 @@ function generateClientManifest (file, cb) {
     ]
   }, fs => {
     const content = fs.readFileSync('/react-ssr-client-manifest.json', 'utf-8');
+
     cb(JSON.parse(content));
   });
 }
@@ -47,14 +48,14 @@ const expectedHTMLWithManifest = (options: any = {}) =>
     // used chunks should have preload
     '<link rel="preload" href="/manifest.js" as="script">' +
     '<link rel="preload" href="/main.js" as="script">' +
-    '<link rel="prefetch" href="/0.js">' +
+    '<link rel="preload" href="/0.js" as="script">' +
+    '<link rel="preload" href="/test.css" as="style">' +
     // images and fonts are only preloaded when explicitly asked for
     (options.preloadOtherAssets ? '<link rel="preload" href="/test.png" as="image">' : '') +
     (options.preloadOtherAssets ? '<link rel="preload" href="/test.woff2" as="font" type="font/woff2" crossorigin>' : '') +
     // unused chunks should have prefetch
     (options.noPrefetch ? '' : '<link rel="prefetch" href="/1.js">') +
     // css assets should be loaded
-    '<link rel="prefetch" href="/test.css">' +
     '<link rel="stylesheet" href="/test.css">' +
     '</head><body>' +
     '<!--ssr-outlet--><div id="root"><div data-reactroot=""><div>async test.woff2 test.png</div></div></div>' +
@@ -63,7 +64,7 @@ const expectedHTMLWithManifest = (options: any = {}) =>
     // manifest chunk should be first
     '<script src="/manifest.js" defer></script>' +
     // async chunks should be before main chunk
-    // '<script src="/0.js" defer></script>' +
+    '<script src="/0.js" defer></script>' +
     '<script src="/main.js" defer></script>' +
     '</body></html>';
 
@@ -73,6 +74,30 @@ function createClientManifestAssertions (runInNewContext) {
       renderer.renderToString({ state: { a: 1 } }, (err, res) => {
         expect(err).toBeNull();
         expect(res).toContain(expectedHTMLWithManifest());
+        done();
+      });
+    });
+  }); });
+
+  it('bundleRenderer + renderToStream + clientManifest + shouldPreload', () => { return new Promise(done => {
+    createRendererWithManifest('split.js', {
+      runInNewContext,
+      shouldPreload: (_file, type) => {
+        if (type === 'image' || type === 'script' || type === 'font' || type === 'style') {
+          return true;
+        }
+        return false;
+      }
+    }, renderer => {
+      const stream = renderer.renderToStream({ state: { a: 1 } });
+      let res = '';
+      stream.on('data', chunk => {
+        res += chunk.toString();
+      });
+      stream.on('end', () => {
+        expect(res).toContain(expectedHTMLWithManifest({
+          preloadOtherAssets: true
+        }));
         done();
       });
     });
