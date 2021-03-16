@@ -7,6 +7,11 @@ const Foo = Loadable({
   loading: () => null
 });
 
+const Bar = Loadable({ // eslint-disable-line
+  loader: () => import('./async-bar'),
+  loading: () => null
+});
+
 export default context => {
   return new Promise( resolve => {
     context.msg = 'hello';
