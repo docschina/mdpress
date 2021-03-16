@@ -73,7 +73,7 @@ function createAssertions (runInNewContext) {
       const context = { url: '/test' };
       renderer.renderToString(context, (err, res) => {
         expect(err).toBeNull();
-        expect(res).toBe('<div data-reactroot="">/test<div>async foo</div></div>');
+        expect(res).toBe('<div data-reactroot="">/test<div>async test.woff2 test.png</div></div>');
         done();
       });
     });
