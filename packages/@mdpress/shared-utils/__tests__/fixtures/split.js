@@ -17,7 +17,7 @@ export default context => {
     context.msg = 'hello';
 
     Loadable.preloadAll().then(() => {
-      const compInstance = React.createElement('div', null, context.url, React.createElement(Foo, null));
+      const compInstance = React.createElement('div', null, context.url, React.createElement(Foo, context));
       resolve(compInstance);
     });
 
