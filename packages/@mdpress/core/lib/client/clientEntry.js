@@ -19,7 +19,6 @@ if (!window.MDPRESS_INIT) {
     }
 
     window.MDPRESS_INIT = true;
-    window.__MDPRESS__.base = routerBase;
     render((
       <Client/>
     ), document.getElementById('root'));
