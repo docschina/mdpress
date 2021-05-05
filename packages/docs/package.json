@@ -1,6 +1,6 @@
 {
   "name": "docs",
-  "version": "1.0.0-rc.16",
+  "version": "1.0.0-rc.17",
   "private": true,
   "description": "docs of MdPress",
   "keywords": [
@@ -31,12 +31,12 @@
     "view-info": "mdpress view-info docs --temp .temp"
   },
   "devDependencies": {
-    "@mdpress/plugin-back-to-top": "1.0.0-rc.16",
-    "@mdpress/plugin-google-analytics": "1.0.0-rc.16",
-    "@mdpress/plugin-medium-zoom": "1.0.0-rc.16",
-    "@mdpress/plugin-pwa": "1.0.0-rc.16",
+    "@mdpress/plugin-back-to-top": "1.0.0-rc.17",
+    "@mdpress/plugin-google-analytics": "1.0.0-rc.17",
+    "@mdpress/plugin-medium-zoom": "1.0.0-rc.17",
+    "@mdpress/plugin-pwa": "1.0.0-rc.17",
     "@textlint-rule/textlint-rule-no-unmatched-pair": "^1.0.7",
-    "mdpress": "1.0.0-rc.16",
+    "mdpress": "1.0.0-rc.17",
     "mdpress-plugin-flowchart": "^1.0.0-rc.2",
     "mdpress-plugin-serve": "^1.0.0-rc.7",
     "mdpress-plugin-smooth-scroll": "^1.0.0-rc.7",
