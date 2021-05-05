@@ -172,12 +172,13 @@ class TemplateRenderer {
     }
     renderState(context, options) {
         const { contextKey = 'state', windowKey = '__INITIAL_STATE__' } = options || {};
-        const state = serialize_javascript_1.default(context[contextKey], { isJSON: true });
+        const state = serialize_javascript_1.default(context[contextKey]);
         const autoRemove = process.env.NODE_ENV === 'production'
             ? ';(function(){var s;(s=document.currentScript||document.scripts[document.scripts.length-1]).parentNode.removeChild(s);}());'
             : '';
+        const nonceAttr = context.nonce ? ` nonce="${context.nonce}"` : '';
         return context[contextKey]
-            ? `<script>window.${windowKey}=${state}${autoRemove}</script>`
+            ? `<script${nonceAttr}>window.${windowKey}=${state}${autoRemove}</script>`
             : '';
     }
     renderScripts(context) {

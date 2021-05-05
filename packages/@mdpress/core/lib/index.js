@@ -24,7 +24,6 @@ async function build (options) {
   }
   const app = createApp(options);
   await app.process();
-  console.log('options.keepManifest',options.keepManifest);
   return app.build(!options.keepManifest);
 }
 

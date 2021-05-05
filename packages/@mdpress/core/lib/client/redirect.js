@@ -30,7 +30,7 @@ export function handleRedirectForCleanUrls (routes) {
   // Info:redirect /foo to /foo/
   useEffect(()=>{
     const pathname = route.pathname;
-    console.info('pathname',pathname);
+    // console.info('pathname',pathname);
 
     if (!isRouteExists(routes,pathname)) {
       if (!/(\/|\.html)$/.test(pathname)) {
