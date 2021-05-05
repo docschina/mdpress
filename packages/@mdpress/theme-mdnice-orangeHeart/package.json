@@ -1,6 +1,6 @@
 {
   "name": "@mdpress/theme-mdnice-orangeHeart",
-  "version": "1.0.0-rc.16",
+  "version": "1.0.0-rc.17",
   "private": true,
   "description": "theme-mdnice-orangeHeart for mdpress",
   "keywords": [
@@ -21,7 +21,7 @@
   "author": "docschina",
   "main": "index.js",
   "dependencies": {
-    "@mdpress/theme-default": "1.0.0-rc.16"
+    "@mdpress/theme-default": "1.0.0-rc.17"
   },
   "publishConfig": {
     "access": "public"

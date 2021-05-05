@@ -1,6 +1,6 @@
 {
   "name": "@mdpress/plugin-tencent-cloud-cms",
-  "version": "1.0.0-rc.16",
+  "version": "1.0.0-rc.17",
   "description": "tencent-cloud-cms for mdpress",
   "keywords": [
     "documentation",
@@ -22,9 +22,9 @@
   "dependencies": {
     "@cloudbase/database": "^1.2.2",
     "@cloudbase/js-sdk": "1.3.3",
-    "@mdpress/plugin-back-to-top": "1.0.0-rc.16",
+    "@mdpress/plugin-back-to-top": "1.0.0-rc.17",
     "antd": "^4.8.0",
-    "mdpress": "1.0.0-rc.16"
+    "mdpress": "1.0.0-rc.17"
   },
   "publishConfig": {
     "access": "public"
