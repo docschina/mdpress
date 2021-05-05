@@ -29,4 +29,6 @@ return <div><img src={src} alt="foo"/></div>
 ```
 ````
 
+> But you don't need to use image follow this code. you just use `<img src="/foo.png" alt="foo"/>` will be fine, we will auto inject base url to result of render markdown.
+
 Also, if a `base` is set, it’s automatically prepended to all asset URLs in `.mdpress/config.js` options.
