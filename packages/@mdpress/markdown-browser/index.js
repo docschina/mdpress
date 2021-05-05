@@ -10,6 +10,7 @@ import tocPlugin from 'markdown-it-table-of-contents';
 import _slugify  from '@mdpress/shared-utils/lib/slugify';
 import parseHeaders  from '@mdpress/shared-utils/lib/parseHeaders';
 import snippetPlugin from './snippet';
+import image from './image';
 
 /**
  * Create markdown by config.
@@ -40,6 +41,7 @@ export default (markdown = {}) => {
         target: '_blank',
         rel: 'noopener noreferrer'
       }, externalLinks))
+      .use(image)
 
     // 3rd party plugins
       .use(emojiPlugin)

@@ -28,4 +28,6 @@ return <div><img src={src} alt="foo"/></div>
 ```
 ````
 
+> 但你并不需要这样引入图片，使用 `<img src="/foo.png" alt="foo"/>` 即可，我们会在渲染 markdown 时自动注入 base url 进去。
+
 最后补充一句，一个 `base` 路径一旦被设置，它将会自动地作为前缀插入到 `.mdpress/config.js` 中所有以 `/` 开始的资源路径中。
