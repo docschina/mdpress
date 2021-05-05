@@ -1,3 +1,7 @@
+import { siteData } from '@internal/siteData';
+
+const routerBase = siteData.routerBase || siteData.base;
+
 export default (md) => {
   const defaultImgRender = md.renderer.rules.image;
 
@@ -5,8 +9,8 @@ export default (md) => {
     const token = tokens[idx];
     let src = token.attrGet('src');
 
-    if (window.__MDPRESS__ && window.__MDPRESS__.base) {
-      src = withBase(window.__MDPRESS__.base,src);
+    if (routerBase) {
+      src = withBase(routerBase,src);
     }
     token.attrSet('src', src);
 
