@@ -120,9 +120,9 @@ function Layout(props = {}) {
 
   const { className = '',id = '' } = props;
 
-  useEffect(()=>{
-    console.info('mounted Layout',props);
-  },[]);
+  // useEffect(()=>{
+  //   console.info('mounted Layout',props);
+  // },[]);
 
   useEffect(()=>{
     setIsSidebarOpen(false);
