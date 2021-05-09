@@ -26,13 +26,6 @@ jobs:
             git init
             git add -A
             git commit -m 'deploy'
-      - name: Push site
-        uses: ad-m/github-push-action@master
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          branch: 'gh-pages'
-          force: true
-          directory: 'mdpress'  
       - name: Check Build
         run: |
           sudo -i
@@ -46,5 +39,12 @@ jobs:
           staticSrcPath: mdpress
           bucket: ${{ secrets.BUCKET }}
           region: ${{ secrets.REGION }}
+      - name: Push site
+        uses: ad-m/github-push-action@master
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          branch: 'gh-pages'
+          force: true
+          directory: 'mdpress'  
         env:
             CI: true
