@@ -33,6 +33,6 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           branch: 'gh-pages-github'
           force: true
-          directory: '.'
+          directory: 'mdpress'
         env:
             CI: true
