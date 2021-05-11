@@ -25,6 +25,8 @@ jobs:
             git init
             git add -A
             git commit -m 'deploy'
+        env:
+          SITE_TARGET: 'github'
       - name: Push site
         uses: ad-m/github-push-action@master
         with:
