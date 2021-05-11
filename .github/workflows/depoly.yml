@@ -26,6 +26,19 @@ jobs:
             git init
             git add -A
             git commit -m 'deploy'
+      - name: Check Build
+        run: |
+          sudo -i
+          sudo chown -R $USER ./mdpress
+      - name: Docschina Github Action
+        id: deployStatic
+        uses: lcxfs1991/docschina-actions@master
+        with:
+          secretId: ${{ secrets.SECRET_ID }}
+          secretKey: ${{ secrets.SECRET_KEY }}
+          staticSrcPath: mdpress
+          bucket: ${{ secrets.BUCKET }}
+          region: ${{ secrets.REGION }}
       - name: Push site
         uses: ad-m/github-push-action@master
         with:
