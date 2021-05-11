@@ -1,8 +1,8 @@
-name: deploy
+name: deploy-github
 on:
   push:
     branches:
-      - master
+      - 1.x
 jobs:
   build:
     name: Build
@@ -25,16 +25,12 @@ jobs:
             git init
             git add -A
             git commit -m 'deploy'
-      - name: Check Build
-        run: |
-          sudo -i
-          sudo chown -R $USER ./mdpress
-      - name: Docschina Github Action
-        id: deployStatic
-        uses: lcxfs1991/docschina-actions@master
+      - name: Push site
+        uses: ad-m/github-push-action@master
         with:
-          secretId: ${{ secrets.SECRET_ID }}
-          secretKey: ${{ secrets.SECRET_KEY }}
-          staticSrcPath: mdpress
-          bucket: ${{ secrets.BUCKET }}
-          region: ${{ secrets.REGION }}
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          branch: 'gh-pages-github'
+          force: true
+          directory: '.'
+        env:
+            CI: true
