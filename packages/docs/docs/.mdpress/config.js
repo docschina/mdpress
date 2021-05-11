@@ -1,7 +1,7 @@
 const { fs, path } = require('@mdpress/shared-utils');
 
 module.exports = () => ({
-  base: '/mdpress/',
+  // base: '/mdpress/',
   dest: '../../mdpress',
   locales: {
     '/': {
