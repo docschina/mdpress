@@ -2,7 +2,7 @@
 
 ## Documentation
 
-Check out our docs at https://docschina.github.io/mdpress/.
+Check out our docs at https://mdpress.docschina.org/.
 
 ## Contribution
 
