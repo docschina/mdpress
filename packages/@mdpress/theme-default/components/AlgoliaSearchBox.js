@@ -49,7 +49,6 @@ export default function AlgoliaSearchBox(props) {
   },[options,$lang]);
 
   useEffect(() => {
-    initialize(options, $lang);
     setPlaceholder($site.themeConfig.searchPlaceholder || '');
 
   },[]);
