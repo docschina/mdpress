@@ -1,3 +1,13 @@
+# [1.0.0-rc.18](https://github.com/docschina/mdpress/compare/v1.0.0-rc.17...v1.0.0-rc.18) (2021-06-19)
+
+
+### Bug Fixes
+
+* algolia search initialize twice ([a6a0723](https://github.com/docschina/mdpress/commit/a6a0723f248d6e7f95c30bc38a7605b6c8e0e243))
+* tencent cms plugin anchor ([20fa731](https://github.com/docschina/mdpress/commit/20fa731547be1e0d98f4b3b81bdf06688037ac9f))
+
+
+
 # [1.0.0-rc.16](https://github.com/docschina/mdpress/compare/v1.0.0-rc.15...v1.0.0-rc.16) (2021-03-11)
 
 
