@@ -11,6 +11,7 @@ import AnchorList from './AnchorList';
 import useLayoutData from './hooks/useLayoutData';
 import useDoc from './hooks/useDoc';
 import useSidebar from './hooks/useSidebar';
+import useScroll from './hooks/useScroll';
 
 const NotFound = LayoutComponents.NotFound;
 
@@ -19,6 +20,7 @@ export default function GlobalLayout(props) {
   const { doc,error } = useDoc(params.path || '/',props.staticContext);
   const { data: sidebarItems } = useSidebar(doc._id);
   useUpdateMeta(props);
+  useScroll(doc);
 
   // console.log('doc',doc);
   // console.log('sidebarItems',sidebarItems);
