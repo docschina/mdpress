@@ -1,6 +1,6 @@
 {
   "name": "@mdpress/theme-default",
-  "version": "1.0.0-rc.17",
+  "version": "1.0.0-rc.18",
   "description": "theme-default for mdpress",
   "keywords": [
     "documentation",
@@ -20,10 +20,10 @@
   "author": "docschina",
   "main": "index.js",
   "dependencies": {
-    "@mdpress/plugin-active-header-links": "1.0.0-rc.17",
-    "@mdpress/plugin-container": "1.0.0-rc.17",
-    "@mdpress/plugin-nprogress": "1.0.0-rc.17",
-    "@mdpress/plugin-search": "1.0.0-rc.17",
+    "@mdpress/plugin-active-header-links": "1.0.0-rc.18",
+    "@mdpress/plugin-container": "1.0.0-rc.18",
+    "@mdpress/plugin-nprogress": "1.0.0-rc.18",
+    "@mdpress/plugin-search": "1.0.0-rc.18",
     "docsearch.js": "^2.5.2",
     "react-transition-group": "^4.3.0"
   },
