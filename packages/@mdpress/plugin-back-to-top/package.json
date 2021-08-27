@@ -1,6 +1,6 @@
 {
   "name": "@mdpress/plugin-back-to-top",
-  "version": "1.0.0-rc.18",
+  "version": "1.0.0-rc.19",
   "description": "back-to-top plugin for mdpress",
   "keywords": [
     "documentation",

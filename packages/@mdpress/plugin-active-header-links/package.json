@@ -1,6 +1,6 @@
 {
   "name": "@mdpress/plugin-active-header-links",
-  "version": "1.0.0-rc.18",
+  "version": "1.0.0-rc.19",
   "description": "active-header-links plugin for mdpress",
   "keywords": [
     "documentation",
