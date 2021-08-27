@@ -1,0 +1,1 @@
+.badge{display:inline-block;font-size:14px;height:18px;line-height:18px;border-radius:3px;padding:0 6px;color:#fff}.badge,.badge.green,.badge.tip{background-color:#42b983}.badge.error{background-color:#da5961}.badge.warn,.badge.warning,.badge.yellow{background-color:#e7c000}.badge+.badge{margin-left:5px}

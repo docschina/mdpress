@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>配置 | MdPress</title>
+    <meta name="generator" content="MdPress 1.0.0-rc.18">
+    <link rel="icon" href="/mdpress/logo.png">
+    <link rel="manifest" href="/mdpress/manifest.json">
+    <link rel="apple-touch-icon" href="/mdpress/icons/apple-touch-icon-152x152.png">
+    <link rel="mask-icon" href="/mdpress/icons/safari-pinned-tab.svg" color="#3eaf7c">
+    <meta name="description" content="Markdown 驱动的网站生成器">
+    <meta name="theme-color" content="#3eaf7c">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="msapplication-TileImage" content="/icons/msapplication-icon-144x144.png">
+    <meta name="msapplication-TileColor" content="#000000">
+    <link rel="preload" href="/mdpress/assets/js/babel-standalone.2e83c5ad.js" as="script"><link rel="preload" href="/mdpress/assets/js/react-lib.b7b5047b.js" as="script"><link rel="preload" href="/mdpress/assets/js/vendor.8030ef37.js" as="script"><link rel="preload" href="/mdpress/assets/css/styles.c5b03301.css" as="style"><link rel="preload" href="/mdpress/assets/js/app.c5b03301.js" as="script"><link rel="prefetch" href="/mdpress/assets/css/10.styles.c692065a.css"><link rel="prefetch" href="/mdpress/assets/css/11.styles.8cfb5ad4.css"><link rel="prefetch" href="/mdpress/assets/css/12.styles.508af67b.css"><link rel="prefetch" href="/mdpress/assets/css/13.styles.d83cb597.css"><link rel="prefetch" href="/mdpress/assets/css/14.styles.bbf90a5a.css"><link rel="prefetch" href="/mdpress/assets/css/15.styles.fdd7af22.css"><link rel="prefetch" href="/mdpress/assets/css/16.styles.09a03981.css"><link rel="prefetch" href="/mdpress/assets/css/17.styles.a03aad6a.css"><link rel="prefetch" href="/mdpress/assets/css/18.styles.bbedd6ea.css"><link rel="prefetch" href="/mdpress/assets/css/19.styles.cf5c1a09.css"><link rel="prefetch" href="/mdpress/assets/css/20.styles.4ff4c6d0.css"><link rel="prefetch" href="/mdpress/assets/css/21.styles.8f62cd7c.css"><link rel="prefetch" href="/mdpress/assets/css/22.styles.98a753c3.css"><link rel="prefetch" href="/mdpress/assets/css/23.styles.b513589a.css"><link rel="prefetch" href="/mdpress/assets/css/24.styles.b6305f2e.css"><link rel="prefetch" href="/mdpress/assets/css/25.styles.2381bebc.css"><link rel="prefetch" href="/mdpress/assets/css/26.styles.23c8aa0d.css"><link rel="prefetch" href="/mdpress/assets/css/27.styles.e3ffd9f8.css"><link rel="prefetch" href="/mdpress/assets/css/28.styles.9cb55a4c.css"><link rel="prefetch" href="/mdpress/assets/css/29.styles.916340e3.css"><link rel="prefetch" href="/mdpress/assets/css/30.styles.18958679.css"><link rel="prefetch" href="/mdpress/assets/css/31.styles.3f372bb7.css"><link rel="prefetch" href="/mdpress/assets/css/32.styles.b02f1509.css"><link rel="prefetch" href="/mdpress/assets/css/33.styles.ac8863c4.css"><link rel="prefetch" href="/mdpress/assets/css/34.styles.2d683165.css"><link rel="prefetch" href="/mdpress/assets/css/35.styles.8f034291.css"><link rel="prefetch" href="/mdpress/assets/css/36.styles.98b000fb.css"><link rel="prefetch" href="/mdpress/assets/css/37.styles.25354bb2.css"><link rel="prefetch" href="/mdpress/assets/css/38.styles.6c2d8018.css"><link rel="prefetch" href="/mdpress/assets/css/39.styles.0c3cb740.css"><link rel="prefetch" href="/mdpress/assets/css/4.styles.e4de97f2.css"><link rel="prefetch" href="/mdpress/assets/css/40.styles.0c076696.css"><link rel="prefetch" href="/mdpress/assets/css/41.styles.e84e3391.css"><link rel="prefetch" href="/mdpress/assets/css/42.styles.728efece.css"><link rel="prefetch" href="/mdpress/assets/css/43.styles.b080126a.css"><link rel="prefetch" href="/mdpress/assets/css/44.styles.eb392dc8.css"><link rel="prefetch" href="/mdpress/assets/css/45.styles.d6515426.css"><link rel="prefetch" href="/mdpress/assets/css/46.styles.59d3578a.css"><link rel="prefetch" href="/mdpress/assets/css/47.styles.bdbe525c.css"><link rel="prefetch" href="/mdpress/assets/css/48.styles.ada2ccb3.css"><link rel="prefetch" href="/mdpress/assets/css/49.styles.08dc64d1.css"><link rel="prefetch" href="/mdpress/assets/css/5.styles.b2e5dba3.css"><link rel="prefetch" href="/mdpress/assets/css/50.styles.61245f72.css"><link rel="prefetch" href="/mdpress/assets/css/51.styles.55189ab1.css"><link rel="prefetch" href="/mdpress/assets/css/52.styles.141b181f.css"><link rel="prefetch" href="/mdpress/assets/css/53.styles.fd1be2c5.css"><link rel="prefetch" href="/mdpress/assets/css/54.styles.c9ea13e3.css"><link rel="prefetch" href="/mdpress/assets/css/55.styles.37ff7e27.css"><link rel="prefetch" href="/mdpress/assets/css/56.styles.c683b7ba.css"><link rel="prefetch" href="/mdpress/assets/css/57.styles.b52d3c05.css"><link rel="prefetch" href="/mdpress/assets/css/58.styles.db79709c.css"><link rel="prefetch" href="/mdpress/assets/css/59.styles.ef423b29.css"><link rel="prefetch" href="/mdpress/assets/css/6.styles.9a17de6a.css"><link rel="prefetch" href="/mdpress/assets/css/60.styles.52e9cdae.css"><link rel="prefetch" href="/mdpress/assets/css/61.styles.dddfd77d.css"><link rel="prefetch" href="/mdpress/assets/css/62.styles.26e4b55f.css"><link rel="prefetch" href="/mdpress/assets/css/63.styles.fc106b49.css"><link rel="prefetch" href="/mdpress/assets/css/64.styles.f4b8dac9.css"><link rel="prefetch" href="/mdpress/assets/css/65.styles.120c4d1c.css"><link rel="prefetch" href="/mdpress/assets/css/66.styles.beeffd4e.css"><link rel="prefetch" href="/mdpress/assets/css/67.styles.27bbf3a5.css"><link rel="prefetch" href="/mdpress/assets/css/68.styles.b3ae1fbd.css"><link rel="prefetch" href="/mdpress/assets/css/69.styles.50625c10.css"><link rel="prefetch" href="/mdpress/assets/css/7.styles.bf89aa59.css"><link rel="prefetch" href="/mdpress/assets/css/70.styles.b27d7c3e.css"><link rel="prefetch" href="/mdpress/assets/css/71.styles.2362aac7.css"><link rel="prefetch" href="/mdpress/assets/css/72.styles.c6ae8547.css"><link rel="prefetch" href="/mdpress/assets/css/73.styles.50668aa5.css"><link rel="prefetch" href="/mdpress/assets/css/74.styles.74f50d48.css"><link rel="prefetch" href="/mdpress/assets/css/75.styles.ef7230d4.css"><link rel="prefetch" href="/mdpress/assets/css/76.styles.b489ac5c.css"><link rel="prefetch" href="/mdpress/assets/css/77.styles.c7d5ae40.css"><link rel="prefetch" href="/mdpress/assets/css/78.styles.5916d5b4.css"><link rel="prefetch" href="/mdpress/assets/css/79.styles.a12ed335.css"><link rel="prefetch" href="/mdpress/assets/css/8.styles.9b0b3b90.css"><link rel="prefetch" href="/mdpress/assets/css/80.styles.9d904636.css"><link rel="prefetch" href="/mdpress/assets/css/81.styles.32a70f84.css"><link rel="prefetch" href="/mdpress/assets/css/82.styles.c0502ce1.css"><link rel="prefetch" href="/mdpress/assets/css/83.styles.30aa4096.css"><link rel="prefetch" href="/mdpress/assets/css/84.styles.3b38222d.css"><link rel="prefetch" href="/mdpress/assets/css/85.styles.d43c864d.css"><link rel="prefetch" href="/mdpress/assets/css/86.styles.1a16432c.css"><link rel="prefetch" href="/mdpress/assets/css/87.styles.4e87022a.css"><link rel="prefetch" href="/mdpress/assets/css/88.styles.72f3b199.css"><link rel="prefetch" href="/mdpress/assets/css/89.styles.4e9eb050.css"><link rel="prefetch" href="/mdpress/assets/css/9.styles.270b208b.css"><link rel="prefetch" href="/mdpress/assets/css/90.styles.9718a80c.css"><link rel="prefetch" href="/mdpress/assets/css/91.styles.4a7b5bac.css"><link rel="prefetch" href="/mdpress/assets/css/92.styles.9b8b1bff.css"><link rel="prefetch" href="/mdpress/assets/js/10.c692065a.js"><link rel="prefetch" href="/mdpress/assets/js/11.8cfb5ad4.js"><link rel="prefetch" href="/mdpress/assets/js/12.508af67b.js"><link rel="prefetch" href="/mdpress/assets/js/13.d83cb597.js"><link rel="prefetch" href="/mdpress/assets/js/14.bbf90a5a.js"><link rel="prefetch" href="/mdpress/assets/js/15.fdd7af22.js"><link rel="prefetch" href="/mdpress/assets/js/16.09a03981.js"><link rel="prefetch" href="/mdpress/assets/js/17.a03aad6a.js"><link rel="prefetch" href="/mdpress/assets/js/18.bbedd6ea.js"><link rel="prefetch" href="/mdpress/assets/js/19.cf5c1a09.js"><link rel="prefetch" href="/mdpress/assets/js/20.4ff4c6d0.js"><link rel="prefetch" href="/mdpress/assets/js/21.8f62cd7c.js"><link rel="prefetch" href="/mdpress/assets/js/22.98a753c3.js"><link rel="prefetch" href="/mdpress/assets/js/23.b513589a.js"><link rel="prefetch" href="/mdpress/assets/js/24.b6305f2e.js"><link rel="prefetch" href="/mdpress/assets/js/25.2381bebc.js"><link rel="prefetch" href="/mdpress/assets/js/26.23c8aa0d.js"><link rel="prefetch" href="/mdpress/assets/js/27.e3ffd9f8.js"><link rel="prefetch" href="/mdpress/assets/js/28.9cb55a4c.js"><link rel="prefetch" href="/mdpress/assets/js/29.916340e3.js"><link rel="prefetch" href="/mdpress/assets/js/30.18958679.js"><link rel="prefetch" href="/mdpress/assets/js/31.3f372bb7.js"><link rel="prefetch" href="/mdpress/assets/js/32.b02f1509.js"><link rel="prefetch" href="/mdpress/assets/js/33.ac8863c4.js"><link rel="prefetch" href="/mdpress/assets/js/34.2d683165.js"><link rel="prefetch" href="/mdpress/assets/js/35.8f034291.js"><link rel="prefetch" href="/mdpress/assets/js/36.98b000fb.js"><link rel="prefetch" href="/mdpress/assets/js/37.25354bb2.js"><link rel="prefetch" href="/mdpress/assets/js/38.6c2d8018.js"><link rel="prefetch" href="/mdpress/assets/js/39.0c3cb740.js"><link rel="prefetch" href="/mdpress/assets/js/4.e4de97f2.js"><link rel="prefetch" href="/mdpress/assets/js/40.0c076696.js"><link rel="prefetch" href="/mdpress/assets/js/41.e84e3391.js"><link rel="prefetch" href="/mdpress/assets/js/42.728efece.js"><link rel="prefetch" href="/mdpress/assets/js/43.b080126a.js"><link rel="prefetch" href="/mdpress/assets/js/44.eb392dc8.js"><link rel="prefetch" href="/mdpress/assets/js/45.d6515426.js"><link rel="prefetch" href="/mdpress/assets/js/46.59d3578a.js"><link rel="prefetch" href="/mdpress/assets/js/47.bdbe525c.js"><link rel="prefetch" href="/mdpress/assets/js/48.ada2ccb3.js"><link rel="prefetch" href="/mdpress/assets/js/49.08dc64d1.js"><link rel="prefetch" href="/mdpress/assets/js/5.b2e5dba3.js"><link rel="prefetch" href="/mdpress/assets/js/50.61245f72.js"><link rel="prefetch" href="/mdpress/assets/js/51.55189ab1.js"><link rel="prefetch" href="/mdpress/assets/js/52.141b181f.js"><link rel="prefetch" href="/mdpress/assets/js/53.fd1be2c5.js"><link rel="prefetch" href="/mdpress/assets/js/54.c9ea13e3.js"><link rel="prefetch" href="/mdpress/assets/js/55.37ff7e27.js"><link rel="prefetch" href="/mdpress/assets/js/56.c683b7ba.js"><link rel="prefetch" href="/mdpress/assets/js/57.b52d3c05.js"><link rel="prefetch" href="/mdpress/assets/js/58.db79709c.js"><link rel="prefetch" href="/mdpress/assets/js/59.ef423b29.js"><link rel="prefetch" href="/mdpress/assets/js/6.9a17de6a.js"><link rel="prefetch" href="/mdpress/assets/js/60.52e9cdae.js"><link rel="prefetch" href="/mdpress/assets/js/61.dddfd77d.js"><link rel="prefetch" href="/mdpress/assets/js/62.26e4b55f.js"><link rel="prefetch" href="/mdpress/assets/js/63.fc106b49.js"><link rel="prefetch" href="/mdpress/assets/js/64.f4b8dac9.js"><link rel="prefetch" href="/mdpress/assets/js/65.120c4d1c.js"><link rel="prefetch" href="/mdpress/assets/js/66.beeffd4e.js"><link rel="prefetch" href="/mdpress/assets/js/67.27bbf3a5.js"><link rel="prefetch" href="/mdpress/assets/js/68.b3ae1fbd.js"><link rel="prefetch" href="/mdpress/assets/js/69.50625c10.js"><link rel="prefetch" href="/mdpress/assets/js/7.bf89aa59.js"><link rel="prefetch" href="/mdpress/assets/js/70.b27d7c3e.js"><link rel="prefetch" href="/mdpress/assets/js/71.2362aac7.js"><link rel="prefetch" href="/mdpress/assets/js/72.c6ae8547.js"><link rel="prefetch" href="/mdpress/assets/js/73.50668aa5.js"><link rel="prefetch" href="/mdpress/assets/js/74.74f50d48.js"><link rel="prefetch" href="/mdpress/assets/js/75.ef7230d4.js"><link rel="prefetch" href="/mdpress/assets/js/76.b489ac5c.js"><link rel="prefetch" href="/mdpress/assets/js/77.c7d5ae40.js"><link rel="prefetch" href="/mdpress/assets/js/78.5916d5b4.js"><link rel="prefetch" href="/mdpress/assets/js/79.a12ed335.js"><link rel="prefetch" href="/mdpress/assets/js/8.9b0b3b90.js"><link rel="prefetch" href="/mdpress/assets/js/80.9d904636.js"><link rel="prefetch" href="/mdpress/assets/js/81.32a70f84.js"><link rel="prefetch" href="/mdpress/assets/js/82.c0502ce1.js"><link rel="prefetch" href="/mdpress/assets/js/83.30aa4096.js"><link rel="prefetch" href="/mdpress/assets/js/84.3b38222d.js"><link rel="prefetch" href="/mdpress/assets/js/85.d43c864d.js"><link rel="prefetch" href="/mdpress/assets/js/86.1a16432c.js"><link rel="prefetch" href="/mdpress/assets/js/87.4e87022a.js"><link rel="prefetch" href="/mdpress/assets/js/88.72f3b199.js"><link rel="prefetch" href="/mdpress/assets/js/89.4e9eb050.js"><link rel="prefetch" href="/mdpress/assets/js/9.270b208b.js"><link rel="prefetch" href="/mdpress/assets/js/90.9718a80c.js"><link rel="prefetch" href="/mdpress/assets/js/91.4a7b5bac.js"><link rel="prefetch" href="/mdpress/assets/js/92.9b8b1bff.js"><link rel="prefetch" href="/mdpress/assets/js/93.7bfb589f.js"><link rel="prefetch" href="/mdpress/assets/js/94.d84da156.js"><link rel="prefetch" href="/mdpress/assets/js/95.1b1cf4ce.js"><link rel="prefetch" href="/mdpress/assets/js/96.509edab4.js"><link rel="prefetch" href="/mdpress/assets/js/97.835ebd1d.js">
+    <link rel="stylesheet" href="/mdpress/assets/css/10.styles.c692065a.css"><link rel="stylesheet" href="/mdpress/assets/css/11.styles.8cfb5ad4.css"><link rel="stylesheet" href="/mdpress/assets/css/12.styles.508af67b.css"><link rel="stylesheet" href="/mdpress/assets/css/13.styles.d83cb597.css"><link rel="stylesheet" href="/mdpress/assets/css/14.styles.bbf90a5a.css"><link rel="stylesheet" href="/mdpress/assets/css/15.styles.fdd7af22.css"><link rel="stylesheet" href="/mdpress/assets/css/16.styles.09a03981.css"><link rel="stylesheet" href="/mdpress/assets/css/17.styles.a03aad6a.css"><link rel="stylesheet" href="/mdpress/assets/css/18.styles.bbedd6ea.css"><link rel="stylesheet" href="/mdpress/assets/css/19.styles.cf5c1a09.css"><link rel="stylesheet" href="/mdpress/assets/css/20.styles.4ff4c6d0.css"><link rel="stylesheet" href="/mdpress/assets/css/21.styles.8f62cd7c.css"><link rel="stylesheet" href="/mdpress/assets/css/22.styles.98a753c3.css"><link rel="stylesheet" href="/mdpress/assets/css/23.styles.b513589a.css"><link rel="stylesheet" href="/mdpress/assets/css/24.styles.b6305f2e.css"><link rel="stylesheet" href="/mdpress/assets/css/25.styles.2381bebc.css"><link rel="stylesheet" href="/mdpress/assets/css/26.styles.23c8aa0d.css"><link rel="stylesheet" href="/mdpress/assets/css/27.styles.e3ffd9f8.css"><link rel="stylesheet" href="/mdpress/assets/css/28.styles.9cb55a4c.css"><link rel="stylesheet" href="/mdpress/assets/css/29.styles.916340e3.css"><link rel="stylesheet" href="/mdpress/assets/css/30.styles.18958679.css"><link rel="stylesheet" href="/mdpress/assets/css/31.styles.3f372bb7.css"><link rel="stylesheet" href="/mdpress/assets/css/32.styles.b02f1509.css"><link rel="stylesheet" href="/mdpress/assets/css/33.styles.ac8863c4.css"><link rel="stylesheet" href="/mdpress/assets/css/34.styles.2d683165.css"><link rel="stylesheet" href="/mdpress/assets/css/35.styles.8f034291.css"><link rel="stylesheet" href="/mdpress/assets/css/36.styles.98b000fb.css"><link rel="stylesheet" href="/mdpress/assets/css/37.styles.25354bb2.css"><link rel="stylesheet" href="/mdpress/assets/css/38.styles.6c2d8018.css"><link rel="stylesheet" href="/mdpress/assets/css/39.styles.0c3cb740.css"><link rel="stylesheet" href="/mdpress/assets/css/4.styles.e4de97f2.css"><link rel="stylesheet" href="/mdpress/assets/css/40.styles.0c076696.css"><link rel="stylesheet" href="/mdpress/assets/css/41.styles.e84e3391.css"><link rel="stylesheet" href="/mdpress/assets/css/42.styles.728efece.css"><link rel="stylesheet" href="/mdpress/assets/css/43.styles.b080126a.css"><link rel="stylesheet" href="/mdpress/assets/css/44.styles.eb392dc8.css"><link rel="stylesheet" href="/mdpress/assets/css/45.styles.d6515426.css"><link rel="stylesheet" href="/mdpress/assets/css/46.styles.59d3578a.css"><link rel="stylesheet" href="/mdpress/assets/css/47.styles.bdbe525c.css"><link rel="stylesheet" href="/mdpress/assets/css/48.styles.ada2ccb3.css"><link rel="stylesheet" href="/mdpress/assets/css/49.styles.08dc64d1.css"><link rel="stylesheet" href="/mdpress/assets/css/5.styles.b2e5dba3.css"><link rel="stylesheet" href="/mdpress/assets/css/50.styles.61245f72.css"><link rel="stylesheet" href="/mdpress/assets/css/51.styles.55189ab1.css"><link rel="stylesheet" href="/mdpress/assets/css/52.styles.141b181f.css"><link rel="stylesheet" href="/mdpress/assets/css/53.styles.fd1be2c5.css"><link rel="stylesheet" href="/mdpress/assets/css/54.styles.c9ea13e3.css"><link rel="stylesheet" href="/mdpress/assets/css/55.styles.37ff7e27.css"><link rel="stylesheet" href="/mdpress/assets/css/56.styles.c683b7ba.css"><link rel="stylesheet" href="/mdpress/assets/css/57.styles.b52d3c05.css"><link rel="stylesheet" href="/mdpress/assets/css/58.styles.db79709c.css"><link rel="stylesheet" href="/mdpress/assets/css/59.styles.ef423b29.css"><link rel="stylesheet" href="/mdpress/assets/css/6.styles.9a17de6a.css"><link rel="stylesheet" href="/mdpress/assets/css/60.styles.52e9cdae.css"><link rel="stylesheet" href="/mdpress/assets/css/61.styles.dddfd77d.css"><link rel="stylesheet" href="/mdpress/assets/css/62.styles.26e4b55f.css"><link rel="stylesheet" href="/mdpress/assets/css/63.styles.fc106b49.css"><link rel="stylesheet" href="/mdpress/assets/css/64.styles.f4b8dac9.css"><link rel="stylesheet" href="/mdpress/assets/css/65.styles.120c4d1c.css"><link rel="stylesheet" href="/mdpress/assets/css/66.styles.beeffd4e.css"><link rel="stylesheet" href="/mdpress/assets/css/67.styles.27bbf3a5.css"><link rel="stylesheet" href="/mdpress/assets/css/68.styles.b3ae1fbd.css"><link rel="stylesheet" href="/mdpress/assets/css/69.styles.50625c10.css"><link rel="stylesheet" href="/mdpress/assets/css/7.styles.bf89aa59.css"><link rel="stylesheet" href="/mdpress/assets/css/70.styles.b27d7c3e.css"><link rel="stylesheet" href="/mdpress/assets/css/71.styles.2362aac7.css"><link rel="stylesheet" href="/mdpress/assets/css/72.styles.c6ae8547.css"><link rel="stylesheet" href="/mdpress/assets/css/73.styles.50668aa5.css"><link rel="stylesheet" href="/mdpress/assets/css/74.styles.74f50d48.css"><link rel="stylesheet" href="/mdpress/assets/css/75.styles.ef7230d4.css"><link rel="stylesheet" href="/mdpress/assets/css/76.styles.b489ac5c.css"><link rel="stylesheet" href="/mdpress/assets/css/77.styles.c7d5ae40.css"><link rel="stylesheet" href="/mdpress/assets/css/78.styles.5916d5b4.css"><link rel="stylesheet" href="/mdpress/assets/css/79.styles.a12ed335.css"><link rel="stylesheet" href="/mdpress/assets/css/8.styles.9b0b3b90.css"><link rel="stylesheet" href="/mdpress/assets/css/80.styles.9d904636.css"><link rel="stylesheet" href="/mdpress/assets/css/81.styles.32a70f84.css"><link rel="stylesheet" href="/mdpress/assets/css/82.styles.c0502ce1.css"><link rel="stylesheet" href="/mdpress/assets/css/83.styles.30aa4096.css"><link rel="stylesheet" href="/mdpress/assets/css/84.styles.3b38222d.css"><link rel="stylesheet" href="/mdpress/assets/css/85.styles.d43c864d.css"><link rel="stylesheet" href="/mdpress/assets/css/86.styles.1a16432c.css"><link rel="stylesheet" href="/mdpress/assets/css/87.styles.4e87022a.css"><link rel="stylesheet" href="/mdpress/assets/css/88.styles.72f3b199.css"><link rel="stylesheet" href="/mdpress/assets/css/89.styles.4e9eb050.css"><link rel="stylesheet" href="/mdpress/assets/css/9.styles.270b208b.css"><link rel="stylesheet" href="/mdpress/assets/css/90.styles.9718a80c.css"><link rel="stylesheet" href="/mdpress/assets/css/91.styles.4a7b5bac.css"><link rel="stylesheet" href="/mdpress/assets/css/92.styles.9b8b1bff.css"><link rel="stylesheet" href="/mdpress/assets/css/styles.c5b03301.css">
+  </head>
+  <body>
+    <div id="root"><div><div id="" class="theme-container"><header class="navbar"><div class="sidebar-button"><svg class="icon" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div><a aria-current="page" class="home-link active" href="/mdpress//zh/"><span class="site-name">MdPress</span></a><div class="links"><div class="search-box"><input value="" aria-label="Search" class="" autoComplete="off" spellcheck="false"/></div><nav class="nav-links can-hide"><div class="nav-item"><a href="/mdpress//zh/guide/">指南</a></div><div class="nav-item"><a aria-current="page" class="router-link-active" href="/mdpress//zh/config/">配置</a></div><div class="nav-item"><a href="/mdpress//zh/plugin/">插件</a></div><div class="nav-item"><a href="/mdpress//zh/theme/">主题</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" class="dropdown-title" aria-label="了解更多"><span class="title">了解更多</span><span class="arrow down"></span></button><button type="button" class="mobile-dropdown-title" aria-label="了解更多"><span class="title">了解更多</span><span class="arrow right"></span></button><ul class="nav-dropdown"><li class="dropdown-item"><h4>API</h4><ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/mdpress//zh/api/cli.html">CLI</a></li><li class="dropdown-subitem"><a href="/mdpress//zh/api/node.html">Node</a></li></ul></li><li class="dropdown-item"><h4>开发指南</h4><ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/mdpress//zh/miscellaneous/local-development.html">本地开发</a></li><li class="dropdown-subitem"><a href="/mdpress//zh/miscellaneous/design-concepts.html">设计理念</a></li><li class="dropdown-subitem"><a href="/mdpress//zh/faq/">FAQ</a></li><li class="dropdown-subitem"><a href="/mdpress//zh/miscellaneous/glossary.html">术语</a></li></ul></li><li class="dropdown-item"><h4>其他</h4><ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="https://github.com/docschina/mdpress/blob/master/CHANGELOG.md" class="nav-link external" target="_blank" rel="noopener noreferrer">Changelog<svg class="icon outbound" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path><polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" class="dropdown-title" aria-label="选择语言"><span class="title">选择语言</span><span class="arrow down"></span></button><button type="button" class="mobile-dropdown-title" aria-label="选择语言"><span class="title">选择语言</span><span class="arrow right"></span></button><ul class="nav-dropdown"><li class="dropdown-item"><a href="/mdpress//config/">English</a></li><li class="dropdown-item"><a aria-current="page" class="router-link-active" href="/mdpress//zh/config/">简体中文</a></li></ul></div></div><a href="https://github.com/docschina/mdpress" class="repo-link" target="_blank" rel="noopener noreferrer">GitHub<svg class="icon outbound" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path><polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></nav></div></header><div class="sidebar-mask"></div><aside class="sidebar"><nav class="nav-links undefined"><div class="nav-item"><a href="/mdpress//zh/guide/">指南</a></div><div class="nav-item"><a aria-current="page" class="router-link-active" href="/mdpress//zh/config/">配置</a></div><div class="nav-item"><a href="/mdpress//zh/plugin/">插件</a></div><div class="nav-item"><a href="/mdpress//zh/theme/">主题</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" class="dropdown-title" aria-label="了解更多"><span class="title">了解更多</span><span class="arrow down"></span></button><button type="button" class="mobile-dropdown-title" aria-label="了解更多"><span class="title">了解更多</span><span class="arrow right"></span></button><ul class="nav-dropdown"><li class="dropdown-item"><h4>API</h4><ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/mdpress//zh/api/cli.html">CLI</a></li><li class="dropdown-subitem"><a href="/mdpress//zh/api/node.html">Node</a></li></ul></li><li class="dropdown-item"><h4>开发指南</h4><ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/mdpress//zh/miscellaneous/local-development.html">本地开发</a></li><li class="dropdown-subitem"><a href="/mdpress//zh/miscellaneous/design-concepts.html">设计理念</a></li><li class="dropdown-subitem"><a href="/mdpress//zh/faq/">FAQ</a></li><li class="dropdown-subitem"><a href="/mdpress//zh/miscellaneous/glossary.html">术语</a></li></ul></li><li class="dropdown-item"><h4>其他</h4><ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="https://github.com/docschina/mdpress/blob/master/CHANGELOG.md" class="nav-link external" target="_blank" rel="noopener noreferrer">Changelog<svg class="icon outbound" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path><polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" class="dropdown-title" aria-label="选择语言"><span class="title">选择语言</span><span class="arrow down"></span></button><button type="button" class="mobile-dropdown-title" aria-label="选择语言"><span class="title">选择语言</span><span class="arrow right"></span></button><ul class="nav-dropdown"><li class="dropdown-item"><a href="/mdpress//config/">English</a></li><li class="dropdown-item"><a aria-current="page" class="router-link-active" href="/mdpress//zh/config/">简体中文</a></li></ul></div></div><a href="https://github.com/docschina/mdpress" class="repo-link" target="_blank" rel="noopener noreferrer">GitHub<svg class="icon outbound" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path><polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></nav><ul class="sidebar-links "><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>配置</span></p><ul class="sidebar-links sidebar-group-items"><li><a aria-current="page" class="sidebar-link" href="/mdpress//zh/config/#基本配置">基本配置</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a aria-current="page" class="sidebar-link" href="/mdpress//zh/config/#base">base</a></li><li class="sidebar-sub-header"><a aria-current="page" class="sidebar-link" href="/mdpress//zh/config/#title">title</a></li><li class="sidebar-sub-header"><a aria-current="page" class="sidebar-link" href="/mdpress//zh/config/#description">description</a></li><li class="sidebar-sub-header"><a aria-current="page" class="sidebar-link" href="/mdpress//zh/config/#head">head</a></li><li class="sidebar-sub-header"><a aria-current="page" class="sidebar-link" href="/mdpress//zh/config/#host">host</a></li><li class="sidebar-sub-header"><a aria-current="page" class="sidebar-link" href="/mdpress//zh/config/#port">port</a></li><li class="sidebar-sub-header"><a aria-current="page" class="sidebar-link" href="/mdpress//zh/config/#temp">temp</a></li><li class="sidebar-sub-header"><a aria-current="page" class="sidebar-link" href="/mdpress//zh/config/#dest">dest</a></li><li class="sidebar-sub-header"><a aria-current="page" class="sidebar-link" href="/mdpress//zh/config/#locales">locales</a></li><li class="sidebar-sub-header"><a aria-current="page" class="sidebar-link" href="/mdpress//zh/config/#shouldprefetch">shouldPrefetch</a></li><li class="sidebar-sub-header"><a aria-current="page" class="sidebar-link" href="/mdpress//zh/config/#cache">cache</a></li><li class="sidebar-sub-header"><a aria-current="page" class="sidebar-link" href="/mdpress//zh/config/#extrawatchfiles">extraWatchFiles</a></li><li class="sidebar-sub-header"><a aria-current="page" class="sidebar-link" href="/mdpress//zh/config/#patterns">patterns</a></li></ul></li><li><a aria-current="page" class="sidebar-link" href="/mdpress//zh/config/#styling">Styling</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a aria-current="page" class="sidebar-link" href="/mdpress//zh/config/#palette-styl">palette.styl</a></li><li class="sidebar-sub-header"><a aria-current="page" class="sidebar-link" href="/mdpress//zh/config/#index-styl">index.styl</a></li></ul></li><li><a aria-current="page" class="sidebar-link" href="/mdpress//zh/config/#主题">主题</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a aria-current="page" class="sidebar-link" href="/mdpress//zh/config/#theme">theme</a></li><li class="sidebar-sub-header"><a aria-current="page" class="sidebar-link" href="/mdpress//zh/config/#themeconfig">themeConfig</a></li></ul></li><li><a aria-current="page" class="sidebar-link" href="/mdpress//zh/config/#pluggable">Pluggable</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a aria-current="page" class="sidebar-link" href="/mdpress//zh/config/#plugins">plugins</a></li></ul></li><li><a aria-current="page" class="sidebar-link" href="/mdpress//zh/config/#markdown">Markdown</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a aria-current="page" class="sidebar-link" href="/mdpress//zh/config/#markdown-linenumbers">markdown.lineNumbers</a></li><li class="sidebar-sub-header"><a aria-current="page" class="sidebar-link" href="/mdpress//zh/config/#markdown-slugify">markdown.slugify</a></li><li class="sidebar-sub-header"><a aria-current="page" class="sidebar-link" href="/mdpress//zh/config/#markdown-anchor">markdown.anchor</a></li><li class="sidebar-sub-header"><a aria-current="page" class="sidebar-link" href="/mdpress//zh/config/#markdown-externallinks">markdown.externalLinks</a></li><li class="sidebar-sub-header"><a aria-current="page" class="sidebar-link" href="/mdpress//zh/config/#markdown-toc">markdown.toc</a></li><li class="sidebar-sub-header"><a aria-current="page" class="sidebar-link" href="/mdpress//zh/config/#markdown-extendmarkdown">markdown.extendMarkdown</a></li><li class="sidebar-sub-header"><a aria-current="page" class="sidebar-link" href="/mdpress//zh/config/#markdown-extractheaders">markdown.extractHeaders</a></li></ul></li><li><a aria-current="page" class="sidebar-link" href="/mdpress//zh/config/#构建流程">构建流程</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a aria-current="page" class="sidebar-link" href="/mdpress//zh/config/#postcss">postcss</a></li><li class="sidebar-sub-header"><a aria-current="page" class="sidebar-link" href="/mdpress//zh/config/#stylus">stylus</a></li><li class="sidebar-sub-header"><a aria-current="page" class="sidebar-link" href="/mdpress//zh/config/#scss">scss</a></li><li class="sidebar-sub-header"><a aria-current="page" class="sidebar-link" href="/mdpress//zh/config/#sass">sass</a></li><li class="sidebar-sub-header"><a aria-current="page" class="sidebar-link" href="/mdpress//zh/config/#less">less</a></li><li class="sidebar-sub-header"><a aria-current="page" class="sidebar-link" href="/mdpress//zh/config/#configurewebpack">configureWebpack</a></li><li class="sidebar-sub-header"><a aria-current="page" class="sidebar-link" href="/mdpress//zh/config/#chainwebpack">chainWebpack</a></li></ul></li></ul></section></li></ul></aside><main class="page"><div class="content content__default theme-default-content"><h1 id="配置"><a class="header-anchor" href="#配置">#</a> 配置</h1>
+<h2 id="基本配置"><a class="header-anchor" href="#基本配置">#</a> 基本配置</h2>
+<h3 id="base"><a class="header-anchor" href="#base">#</a> base</h3>
+<ul>
+<li>类型: <code>string</code></li>
+<li>默认值: <code>/</code></li>
+</ul>
+<p>部署站点的基础路径，如果你想让你的网站部署到一个子路径下，你将需要设置它。如 GitHub pages，如果你想将你的网站部署到 <code>https://foo.github.io/bar/</code>，那么 <code>base</code> 应该被设置成 <code>&quot;/bar/&quot;</code>，它的值应当总是以斜杠开始，并以斜杠结束。</p>
+<p><code>base</code> 将会作为前缀自动地插入到所有以 <code>/</code> 开始的其他选项的链接中，所以你只需要指定一次。</p>
+<p><strong>参考:</strong></p>
+<ul>
+<li><a href="./../guide/assets.html#基础路径">基础路径</a></li>
+<li><a href="./../guide/deploy.html#github-pages">部署指南 &gt; GitHub Pages</a></li>
+</ul>
+<h3 id="title"><a class="header-anchor" href="#title">#</a> title</h3>
+<ul>
+<li>类型: <code>string</code></li>
+<li>默认值: <code>undefined</code></li>
+</ul>
+<p>网站的标题，它将会被用作所有页面标题的前缀，同时，默认主题下，它将显示在导航栏（navbar）上。</p>
+<h3 id="description"><a class="header-anchor" href="#description">#</a> description</h3>
+<ul>
+<li>类型: <code>string</code></li>
+<li>默认值: <code>undefined</code></li>
+</ul>
+<p>网站的描述，它将会以 <code>&lt;meta&gt;</code> 标签渲染到当前页面的 HTML 中。</p>
+<h3 id="head"><a class="header-anchor" href="#head">#</a> head</h3>
+<ul>
+<li>类型: <code>Array</code></li>
+<li>默认值: <code>[]</code></li>
+</ul>
+<p>额外的需要被注入到当前页面的 HTML <code>&lt;head&gt;</code> 中的标签，每个标签都可以以 <code>[tagName, { attrName: attrValue }, innerHTML?]</code> 的格式指定，举个例子，增加一个自定义的 favicon：</p>
+<!--beforebegin--><div class="language-js extra-class"><!--afterbegin--><pre class="language-js"><code>module<span class="token punctuation">.</span>exports <span class="token operator">=</span> <span class="token punctuation">{</span>
+  head<span class="token operator">:</span> <span class="token punctuation">[</span>
+    <span class="token punctuation">[</span><span class="token string">'link'</span><span class="token punctuation">,</span> <span class="token punctuation">{</span> rel<span class="token operator">:</span> <span class="token string">'icon'</span><span class="token punctuation">,</span> href<span class="token operator">:</span> <span class="token string">'/logo.png'</span> <span class="token punctuation">}</span><span class="token punctuation">]</span>
+  <span class="token punctuation">]</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<!--beforeend--></div><!--afterend--><h3 id="host"><a class="header-anchor" href="#host">#</a> host</h3>
+<ul>
+<li>类型: <code>string</code></li>
+<li>默认值: <code>'0.0.0.0'</code></li>
+</ul>
+<p>指定用于 dev server 的主机名。</p>
+<h3 id="port"><a class="header-anchor" href="#port">#</a> port</h3>
+<ul>
+<li>类型: <code>number</code></li>
+<li>默认值: <code>8080</code></li>
+</ul>
+<p>指定 dev server 的端口。</p>
+<h3 id="temp"><a class="header-anchor" href="#temp">#</a> temp</h3>
+<ul>
+<li>Type: <code>string</code></li>
+<li>Default: <code>/path/to/@mdpress/core/.temp</code></li>
+</ul>
+<p>指定客户端文件的临时目录。</p>
+<h3 id="dest"><a class="header-anchor" href="#dest">#</a> dest</h3>
+<ul>
+<li>类型: <code>string</code></li>
+<li>默认值: <code>.mdpress/dist</code></li>
+</ul>
+<p>指定 <code>mdpress build</code> 的输出目录。如果传入的是相对路径，则会基于 <code>process.cwd()</code> 进行解析。</p>
+<h3 id="locales"><a class="header-anchor" href="#locales">#</a> locales</h3>
+<ul>
+<li>类型: <code>{ [path: string]: Object }</code></li>
+<li>默认值: <code>undefined</code></li>
+</ul>
+<p>提供多语言支持的语言配置。具体细节请查看 <a href="./../guide/i18n.html">多语言支持</a>。</p>
+<h3 id="shouldprefetch"><a class="header-anchor" href="#shouldprefetch">#</a> shouldPrefetch</h3>
+<ul>
+<li>类型: <code>Function</code></li>
+<li>默认值: <code>() =&gt; true</code></li>
+</ul>
+<p>一个函数，用来控制对于哪些文件，是需要生成 <code>&lt;link rel=&quot;prefetch&quot;&gt;</code> 资源提示的。</p>
+<h3 id="cache"><a class="header-anchor" href="#cache">#</a> cache</h3>
+<ul>
+<li>类型: <code>boolean|string</code></li>
+<li>默认值: <code>true</code></li>
+</ul>
+<p>MdPress 默认使用了 <a href="https://github.com/webpack-contrib/cache-loader" target="_blank" rel="noopener noreferrer">cache-loader<span style="opacity: 0" id="rcqaprqthyse"><svg class="icon outbound" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path><polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></span></a>  来大大地加快 webpack 的编译速度。</p>
+<p>此选项可以用于指定 cache 的路径，同时也可以通过设置为 <code>false</code> 来在每次构建之前删除 cache。</p>
+<p>::: tip
+这个选项也可以通过命令行来使用：</p>
+<!--beforebegin--><div class="language-bash extra-class"><!--afterbegin--><pre class="language-text"><code>mdpress dev docs --cache .cache # 设置 cache 路径
+mdpress dev docs --no-cache     # 在每次构建前删除 cache
+</code></pre>
+<!--beforeend--></div><!--afterend--><p>:::</p>
+<h3 id="extrawatchfiles"><a class="header-anchor" href="#extrawatchfiles">#</a> extraWatchFiles</h3>
+<ul>
+<li>类型: <code>Array</code></li>
+<li>默认值: <code>[]</code></li>
+</ul>
+<p>指定额外的需要被监听的文件。</p>
+<p>你可以监听任何想监听的文件，文件变动将会触发 <code>mdpress</code> 重新构建，并实时更新。</p>
+<!--beforebegin--><div class="language-js extra-class"><!--afterbegin--><pre class="language-js"><code>module<span class="token punctuation">.</span>exports <span class="token operator">=</span> <span class="token punctuation">{</span>
+  extraWatchFiles<span class="token operator">:</span> <span class="token punctuation">[</span>
+    <span class="token string">'.mdpress/foo.js'</span><span class="token punctuation">,</span> <span class="token comment">// 使用相对路径</span>
+    <span class="token string">'/path/to/bar.js'</span>   <span class="token comment">// 使用绝对路径</span>
+  <span class="token punctuation">]</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<!--beforeend--></div><!--afterend--><h3 id="patterns"><a class="header-anchor" href="#patterns">#</a> patterns</h3>
+<ul>
+<li>Type: <code>Array</code></li>
+<li>Default: <code>['**/*.md', '**/*.js']</code></li>
+</ul>
+<p>指定你想要解析的文件模式。</p>
+<h2 id="styling"><a class="header-anchor" href="#styling">#</a> Styling</h2>
+<h3 id="palette-styl"><a class="header-anchor" href="#palette-styl">#</a> palette.styl</h3>
+<p>如果要对<a href="https://github.com/docschina/mdpress/blob/master/packages/@mdpress/core/lib/client/style/config.styl" target="_blank" rel="noopener noreferrer">默认预设<span style="opacity: 0" id="rci350goijhl"><svg class="icon outbound" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path><polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></span></a>的样式进行简单的替换，或者定义一些变量供以后使用，你可以创建一个 <code>.mdpress/styles/palette.styl</code> 文件。</p>
+<p>你可以调整的一些变量如下:</p>
+<!--beforebegin--><div class="language-stylus extra-class"><!--afterbegin--><pre class="language-text"><code>// 颜色
+$accentColor = #3eaf7c
+$textColor = #2c3e50
+$borderColor = #eaecef
+$codeBgColor = #282c34
+$arrowBgColor = #ccc
+$badgeTipColor = #42b983
+$badgeWarningColor = darken(#ffe564, 35%)
+$badgeErrorColor = #DA5961
+
+// 布局
+$navbarHeight = 3.6rem
+$sidebarWidth = 20rem
+$contentWidth = 740px
+$homePageWidth = 960px
+
+// 响应式变化点
+$MQNarrow = 959px
+$MQMobile = 719px
+$MQMobileNarrow = 419px
+</code></pre>
+<!--beforeend--></div><!--afterend--><p>::: danger Note
+你应该<strong>只在</strong>这个文件中定义变量。因为 <code>palette.styl</code> 将在根的 stylus 配置文件的末尾引入，作为配置，它将被多个文件使用，所以一旦你在这里写了样式，你的样式就会被多次复制。
+:::</p>
+<h3 id="index-styl"><a class="header-anchor" href="#index-styl">#</a> index.styl</h3>
+<p>MdPress 提供了一种添加额外样式的简便方法。你可以创建一个 <code>.mdpress/styles/index.styl</code> 文件。这是一个 <a href="http://stylus-lang.com/" target="_blank" rel="noopener noreferrer">Stylus<span style="opacity: 0" id="rcy4bvge1xty"><svg class="icon outbound" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path><polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></span></a> 文件，但你也可以使用正常的 CSS 语法。</p>
+<!--beforebegin--><div class="language-stylus extra-class"><!--afterbegin--><pre class="language-text"><code>.content {
+  font-size 30px
+}
+</code></pre>
+<!--beforeend--></div><!--afterend--><p><strong>参考:</strong></p>
+<ul>
+<li><a href="./../faq/#为什么不能把-palette-styl-和-index-styl-合并到一个-api">为什么不能把 <code>palette.styl</code> 和 <code>index.styl</code> 合并到一个 API?</a></li>
+</ul>
+<h2 id="主题"><a class="header-anchor" href="#主题">#</a> 主题</h2>
+<h3 id="theme"><a class="header-anchor" href="#theme">#</a> theme</h3>
+<ul>
+<li>类型: <code>string</code></li>
+<li>默认值: <code>undefined</code></li>
+</ul>
+<p>当你使用自定义主题的时候，需要指定它。</p>
+<p><strong>参考:</strong></p>
+<ul>
+<li><a href="./../theme/using-a-theme.html">使用主题</a>.</li>
+</ul>
+<h3 id="themeconfig"><a class="header-anchor" href="#themeconfig">#</a> themeConfig</h3>
+<ul>
+<li>类型: <code>Object</code></li>
+<li>默认值: <code>{}</code></li>
+</ul>
+<p>为当前的主题提供一些配置，这些选项依赖于你正在使用的主题。</p>
+<p><strong>也可以参考:</strong></p>
+<ul>
+<li><a href="./../theme/default-theme-config.html">默认主题</a>。</li>
+</ul>
+<h2 id="pluggable"><a class="header-anchor" href="#pluggable">#</a> Pluggable</h2>
+<h3 id="plugins"><a class="header-anchor" href="#plugins">#</a> plugins</h3>
+<ul>
+<li>类型: <code>Object|Array</code></li>
+<li>默认值: <code>undefined</code></li>
+</ul>
+<p>请参考 <a href="./../plugin/using-a-plugin.html">插件 &gt; 使用插件</a> 来使用一个插件。</p>
+<h2 id="markdown"><a class="header-anchor" href="#markdown">#</a> Markdown</h2>
+<p>Markdown 分为 Node 端和客户端的配置，<a href="./../guide/basic-config.html#应用级别的配置">客户端的配置</a>需要在 <code>enhanceApp</code> 中进行。</p>
+<h3 id="markdown-linenumbers"><a class="header-anchor" href="#markdown-linenumbers">#</a> markdown.lineNumbers<span style="opacity: 0" id="rcgoeg8l9ol7"><span class="badge tip" style="vertical-align:top">client</span></span></h3>
+<ul>
+<li>类型: <code>boolean</code></li>
+<li>默认值: <code>undefined</code></li>
+</ul>
+<p>是否在每个代码块的左侧显示行号。</p>
+<p><strong>参考:</strong></p>
+<ul>
+<li><a href="./../guide/markdown.html#行号">行号</a></li>
+</ul>
+<h3 id="markdown-slugify"><a class="header-anchor" href="#markdown-slugify">#</a> markdown.slugify<span style="opacity: 0" id="rcrqtp5kqw01"><span class="badge tip" style="vertical-align:top">client</span></span></h3>
+<ul>
+<li>类型: <code>Function</code></li>
+<li>默认值: <a href="https://github.com/docschina/mdpress/tree/master/packages/@mdpress/shared-utils/src/slugify.ts" target="_blank" rel="noopener noreferrer">source<span style="opacity: 0" id="rcngdmvan2zw"><svg class="icon outbound" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path><polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></span></a></li>
+</ul>
+<p>一个将标题文本转换为 slug 的函数。修改它会影响 <a href="./../miscellaneous/glossary.html#headers">标题</a>、<a href="./../guide/markdown.html#目录">目录</a>、以及<a href="./../theme/default-theme-config.html#侧边栏">侧边栏</a>链接的 id 和 链接。</p>
+<h3 id="markdown-anchor"><a class="header-anchor" href="#markdown-anchor">#</a> markdown.anchor<span style="opacity: 0" id="rcvtii1fi6ds"><span class="badge tip" style="vertical-align:top">client</span></span></h3>
+<ul>
+<li>类型: <code>Object</code></li>
+<li>默认值: <code>{ permalink: true, permalinkBefore: true, permalinkSymbol: '#' }</code></li>
+</ul>
+<p><a href="https://github.com/valeriangalliat/markdown-it-anchor" target="_blank" rel="noopener noreferrer">markdown-it-anchor<span style="opacity: 0" id="rce7es69lvzz"><svg class="icon outbound" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path><polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></span></a> 的选项。</p>
+<h3 id="markdown-externallinks"><a class="header-anchor" href="#markdown-externallinks">#</a> markdown.externalLinks<span style="opacity: 0" id="rcz7u54g8poe"><span class="badge tip" style="vertical-align:top">client</span></span></h3>
+<ul>
+<li>类型: <code>Object</code></li>
+<li>默认值: <code>{ target: '_blank', rel: 'noopener noreferrer' }</code></li>
+</ul>
+<p>这个键值对将会作为特性被增加到是外部链接的 <code>&lt;a&gt;</code> 标签上，默认的选项将会在新窗口中打开一个该外部链接。</p>
+<h3 id="markdown-toc"><a class="header-anchor" href="#markdown-toc">#</a> markdown.toc<span style="opacity: 0" id="rcv37o42b9gy"><span class="badge tip" style="vertical-align:top">client</span></span></h3>
+<ul>
+<li>类型: <code>Object</code></li>
+<li>默认值: <code>{ includeLevel: [2, 3] }</code></li>
+</ul>
+<p><a href="https://github.com/Oktavilla/markdown-it-table-of-contents" target="_blank" rel="noopener noreferrer">markdown-it-table-of-contents<span style="opacity: 0" id="rctjo298m6gy"><svg class="icon outbound" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path><polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></span></a> 的选项。</p>
+<h3 id="markdown-extendmarkdown"><a class="header-anchor" href="#markdown-extendmarkdown">#</a> markdown.extendMarkdown<span style="opacity: 0" id="rcix49dlplee"><span class="badge tip" style="vertical-align:top">client</span></span></h3>
+<ul>
+<li>类型: <code>Function</code></li>
+<li>默认值: <code>undefined</code></li>
+</ul>
+<p>一个用于修改当前的 <a href="https://github.com/markdown-it/markdown-it" target="_blank" rel="noopener noreferrer">markdown-it<span style="opacity: 0" id="rcuth7xmqnr6"><svg class="icon outbound" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path><polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></span></a> 实例的默认配置，或者应用额外的插件的函数，举例如下：</p>
+<!--beforebegin--><div class="language-js extra-class"><!--afterbegin--><pre class="language-js"><code>module<span class="token punctuation">.</span>exports <span class="token operator">=</span> <span class="token punctuation">{</span>
+  markdown<span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token function-variable function">extendMarkdown</span><span class="token operator">:</span> <span class="token parameter">md</span> <span class="token operator">=></span> <span class="token punctuation">{</span>
+      md<span class="token punctuation">.</span><span class="token function">set</span><span class="token punctuation">(</span><span class="token punctuation">{</span> breaks<span class="token operator">:</span> <span class="token boolean">true</span> <span class="token punctuation">}</span><span class="token punctuation">)</span>
+      md<span class="token punctuation">.</span><span class="token function">use</span><span class="token punctuation">(</span><span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'markdown-it-xxx'</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<!--beforeend--></div><!--afterend--><h3 id="markdown-extractheaders"><a class="header-anchor" href="#markdown-extractheaders">#</a> markdown.extractHeaders<span style="opacity: 0" id="rcy9ub2i3lop"><span class="badge tip" style="vertical-align:top">node</span></span></h3>
+<ul>
+<li>类型: <code>Array</code></li>
+<li>默认值: <code>['h2', 'h3']</code></li>
+</ul>
+<p>Markdown 文件的 headers (标题 &amp; 小标题) 会在准备阶段被提取出来，并存储在 <code>this.$page.headers</code> 中。默认情况下，MdPress 会提取 <code>h2</code> 和 <code>h3</code> 标题。你可以通过这个选项来修改提取出的标题级别。</p>
+<!--beforebegin--><div class="language-js extra-class"><!--afterbegin--><pre class="language-js"><code>module<span class="token punctuation">.</span>exports <span class="token operator">=</span> <span class="token punctuation">{</span>
+  markdown<span class="token operator">:</span> <span class="token punctuation">{</span>
+    extractHeaders<span class="token operator">:</span> <span class="token punctuation">[</span> <span class="token string">'h2'</span><span class="token punctuation">,</span> <span class="token string">'h3'</span><span class="token punctuation">,</span> <span class="token string">'h4'</span> <span class="token punctuation">]</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<!--beforeend--></div><!--afterend--><h2 id="构建流程"><a class="header-anchor" href="#构建流程">#</a> 构建流程</h2>
+<h3 id="postcss"><a class="header-anchor" href="#postcss">#</a> postcss</h3>
+<ul>
+<li>类型: <code>Object</code></li>
+<li>默认值: <code>{ plugins: [require('autoprefixer')] }</code></li>
+</ul>
+<p><a href="https://github.com/postcss/postcss-loader" target="_blank" rel="noopener noreferrer">postcss-loader<span style="opacity: 0" id="rcng5ke16kgc"><svg class="icon outbound" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path><polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></span></a> 的选项，请注意，指定这个值，将会覆盖内置的 autoprefixer，所以你需要自己将它加进去。</p>
+<h3 id="stylus"><a class="header-anchor" href="#stylus">#</a> stylus</h3>
+<ul>
+<li>类型: <code>Object</code></li>
+<li>默认值: <code>{ preferPathResolver: 'webpack' }</code></li>
+</ul>
+<p><a href="https://github.com/shama/stylus-loader" target="_blank" rel="noopener noreferrer">stylus-loader<span style="opacity: 0" id="rch8c6pzisfs"><svg class="icon outbound" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path><polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></span></a> 的选项。</p>
+<h3 id="scss"><a class="header-anchor" href="#scss">#</a> scss</h3>
+<ul>
+<li>类型: <code>Object</code></li>
+<li>默认值: <code>{}</code></li>
+</ul>
+<p>加载 <code>*.scss</code> 文件的 <a href="https://github.com/webpack-contrib/sass-loader" target="_blank" rel="noopener noreferrer">sass-loader<span style="opacity: 0" id="rccmznrjq1b2"><svg class="icon outbound" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path><polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></span></a> 的选项。</p>
+<h3 id="sass"><a class="header-anchor" href="#sass">#</a> sass</h3>
+<ul>
+<li>类型: <code>Object</code></li>
+<li>默认值: <code>{ indentedSyntax: true }</code></li>
+</ul>
+<p>加载 <code>*.sass</code> 文件的 <a href="https://github.com/webpack-contrib/sass-loader" target="_blank" rel="noopener noreferrer">sass-loader<span style="opacity: 0" id="rchzj9ug9c19"><svg class="icon outbound" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path><polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></span></a> 的选项。</p>
+<h3 id="less"><a class="header-anchor" href="#less">#</a> less</h3>
+<ul>
+<li>类型: <code>Object</code></li>
+<li>Default: <code>{}</code></li>
+</ul>
+<p><a href="https://github.com/webpack-contrib/less-loader" target="_blank" rel="noopener noreferrer">less-loader<span style="opacity: 0" id="rc69o9gy6590"><svg class="icon outbound" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path><polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></span></a> 的选项。</p>
+<h3 id="configurewebpack"><a class="header-anchor" href="#configurewebpack">#</a> configureWebpack</h3>
+<ul>
+<li>类型: <code>Object | Function</code></li>
+<li>默认值: <code>undefined</code></li>
+</ul>
+<p>用于修改内部的 Webpack 配置。如果给定一个对象，那么它将会被 <a href="https://github.com/survivejs/webpack-merge" target="_blank" rel="noopener noreferrer">webpack-merge<span style="opacity: 0" id="rcx5s014hsqz"><svg class="icon outbound" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path><polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></span></a> 合并到最终的配置中，如果给定一个函数，它将会接受 <code>config</code> 作为第一个参数，以及 <code>isServer</code> 作为第二个参数，你可以直接更改 <code>config</code>，也可以返回一个待合并的对象。</p>
+<!--beforebegin--><div class="language-js extra-class"><!--afterbegin--><pre class="language-js"><code>module<span class="token punctuation">.</span>exports <span class="token operator">=</span> <span class="token punctuation">{</span>
+  <span class="token function-variable function">configureWebpack</span><span class="token operator">:</span> <span class="token punctuation">(</span><span class="token parameter">config<span class="token punctuation">,</span> isServer</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">{</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token operator">!</span>isServer<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token comment">// 修改客户端的 webpack 配置</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<!--beforeend--></div><!--afterend--><h3 id="chainwebpack"><a class="header-anchor" href="#chainwebpack">#</a> chainWebpack</h3>
+<ul>
+<li>类型: <code>Function</code></li>
+<li>默认值: <code>undefined</code></li>
+</ul>
+<p>通过 <a href="https://github.com/mozilla-neutrino/webpack-chain" target="_blank" rel="noopener noreferrer">webpack-chain<span style="opacity: 0" id="rc8zvfpoo3lv"><svg class="icon outbound" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path><polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></span></a> 来修改内部的 Webpack 配置。</p>
+<!--beforebegin--><div class="language-js extra-class"><!--afterbegin--><pre class="language-js"><code>module<span class="token punctuation">.</span>exports <span class="token operator">=</span> <span class="token punctuation">{</span>
+  <span class="token function-variable function">chainWebpack</span><span class="token operator">:</span> <span class="token punctuation">(</span><span class="token parameter">config<span class="token punctuation">,</span> isServer</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">{</span>
+    <span class="token comment">// config 是 ChainableConfig 的一个实例</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<!--beforeend--></div><!--afterend--></div><footer class="page-edit"><div class="edit-link"><a href="https://github.com/docschina/mdpress/edit/master/packages/docs/docs/zh/config/README.md" target="_blank" rel="noopener noreferrer">在 GitHub 上编辑此页</a><svg class="icon outbound" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path><polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></div><div class="last-updated"><span class="prefix">上次更新<!-- -->: </span><span class="time">8/27/2021, 9:25:46 AM</span></div></footer></main></div></div></div>
+    <!--ssr-outlet-->
+    <script src="/mdpress/assets/js/babel-standalone.2e83c5ad.js" defer></script><script src="/mdpress/assets/js/react-lib.b7b5047b.js" defer></script><script src="/mdpress/assets/js/vendor.8030ef37.js" defer></script><script src="/mdpress/assets/js/app.c5b03301.js" defer></script>
+  </body>
+</html>
