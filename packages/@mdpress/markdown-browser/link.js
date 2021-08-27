@@ -25,9 +25,15 @@ export default (md, externalAttrs) => {
         if (/_blank/i.test(externalAttrs['target'])) {
           hasOpenExternalLink = true;
         }
-      } else if (isSourceLink) {
-        hasOpenRouterLink = true;
-        tokens[idx] = toRouterLink(token, link);
+      } else {
+        if (isSourceLink) {
+          hasOpenRouterLink = true;
+          tokens[idx] = toRouterLink(token, link);
+        }
+
+        if (href.startsWith('/')) {
+          token.attrSet('data-inner-link',true);
+        }
       }
     }
     return self.renderToken(tokens, idx, options);
