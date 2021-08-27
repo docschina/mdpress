@@ -11,7 +11,6 @@ import mdpress from '@app/store';
 import { getEnv } from '@app/util';
 
 const isServer = getEnv() === 'server';
-const md = mdpress.createMD();
 
 function initSandbox(md,sandbox = {},options = {}) {
   // console.info('initSandbox',sandbox);
@@ -32,7 +31,9 @@ function initSandbox(md,sandbox = {},options = {}) {
 }
 
 function ContentSlotsDistributor(props) {
-  const { md,markDownString,className,slotKey } = props;
+  const { markDownString,className,slotKey } = props;
+
+  const md = useRef(props.md || mdpress.createMD()).current;
   const { $site,$page } = useData();
   const [slot,setSlot] = useState(null);
   const slotRef = useRef(null);
@@ -106,7 +107,6 @@ ContentSlotsDistributor.defaultProps = {
   markDownString: '',
   className: '',
   scrollAnchor: true,
-  mdInit: () => {},
-  md
+  mdInit: () => {}
 };
 export default ContentSlotsDistributor;
