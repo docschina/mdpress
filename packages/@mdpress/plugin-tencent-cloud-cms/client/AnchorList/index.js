@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react';
 import Anchor from 'antd/es/anchor';
-import slugify from '@mdpress/shared-utils/lib/slugify';
 import { genAnchors } from './util';
 
 import 'antd/es/anchor/style/index.css';
@@ -11,11 +10,11 @@ const AnchorLink = Anchor.Link;
 function genAnchorListNode(node) {
   return node.map(item => {
     if (item.children && item.children.length) {
-      return <AnchorLink key={item.name} href={`#${slugify(item.name)}`} title={item.name}>
+      return <AnchorLink key={item.name} href={`#${item.id}`} title={item.name}>
         {genAnchorListNode(item.children)}
       </AnchorLink>;
     }
-    return <AnchorLink key={item.name} href={`#${slugify(item.name)}`} title={item.name}/>;
+    return <AnchorLink key={item.name} href={`#${item.id}`} title={item.name}/>;
   });
 }
 

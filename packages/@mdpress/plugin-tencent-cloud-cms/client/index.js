@@ -19,6 +19,7 @@ export default ({ routes }) => {
   routes.unshift({
     name: 'docs',
     path: '/docs/:path',
-    component: Layout
+    component: Layout,
+    exact: false
   });
 };

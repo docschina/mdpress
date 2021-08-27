@@ -20,12 +20,8 @@ const Plugin = (options) => {
 
       config.resolveLoader.modules.merge(modules);
       config.resolve.modules.merge(modules);
+      config.node.set('global', true);
     },
-    configureWebpack: {
-      node: {
-        global: true
-      }
-    }
   };
 };
 module.exports = Plugin;

@@ -1,6 +1,5 @@
 import React from 'react';
 import classnames from 'classnames';
-import { useParams } from 'react-router-dom';
 import Navbar from '@theme/components/Navbar';
 import Sidebar from '@theme/components/Sidebar.js';
 import useUpdateMeta from '@app/hooks/updateMeta';
@@ -12,12 +11,14 @@ import useLayoutData from './hooks/useLayoutData';
 import useDoc from './hooks/useDoc';
 import useSidebar from './hooks/useSidebar';
 import useScroll from './hooks/useScroll';
+import usePath from './hooks/usePath';
 
 const NotFound = LayoutComponents.NotFound;
 
 export default function GlobalLayout(props) {
-  const params = useParams();
-  const { doc,error } = useDoc(params.path || '/',props.staticContext);
+  const path = usePath();
+
+  const { doc,error } = useDoc(path || '/',props.staticContext);
   const { data: sidebarItems } = useSidebar(doc._id);
   useUpdateMeta(props);
   useScroll(doc);
@@ -45,11 +46,14 @@ export default function GlobalLayout(props) {
 
     <Sidebar items={sidebarItems} toggleSidebar={toggleSidebar}/>
 
-    {error ? <NotFound/> :
-      <main className="page">
-        <AnchorList str={doc.content} container={'.content__default'}/>
-        <ContentSlotsDistributor className="theme-default-content" markDownString={doc.content} slotKey={'default'}/>
-      </main>
-    }
+    <main className="page">
+      {error ? <NotFound/> :
+        <React.Fragment>
+          <AnchorList str={doc.content} container={'.content__default'}/>
+          <ContentSlotsDistributor className="theme-default-content" markDownString={doc.content} slotKey={'default'}/>
+        </React.Fragment>
+      }
+    </main>
+
   </div>;
 }

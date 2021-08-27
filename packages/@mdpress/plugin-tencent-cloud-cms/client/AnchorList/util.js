@@ -8,6 +8,7 @@ export function genAnchors(dom) {
         name: child.innerText.replace(/^#[\n\s]/,''),
         tag: child.nodeName,
         level: +nodeName.replace('h',''),
+        id: child.id
       }]);
     }
 

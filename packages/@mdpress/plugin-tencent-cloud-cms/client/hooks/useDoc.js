@@ -24,6 +24,7 @@ export default function useDoc(path,staticContext) {
       getDocData(path).then(data => {
         if (data && data.length) {
           setDoc(data[0]);
+          setError(null);
         } else {
           setError(new Error('404'));
         }
