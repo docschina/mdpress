@@ -45,7 +45,7 @@ jobs:
 
     - name: Build docs
       run: |
-        npm install lerna -g
+        npm install lerna@6 -g
         lerna bootstrap
         npm run build
 
